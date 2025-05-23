@@ -1,0 +1,45 @@
+   /* Estilos adicionais específicos para a página de Política de Privacidade */
+   .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.secao-principal {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.titulo-pagina {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #004AAD;
+}
+.paragrafo-padrao {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.subtitulo-secao {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #004AAD;
+}
+.lista-itens {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+.lista-itens li {
+    margin-bottom: 0.5rem;
+}
+.destaque {
+    font-weight: bold;
+    color: #004AAD;
+}
+.imagem-destaque {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
