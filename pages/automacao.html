@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação de Excel - ASL Software Engineering</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Automação de Excel e planilhas para empresas. Aumente a produtividade, reduza erros e otimize processos com nossas soluções personalizadas de automação.">
+    <meta name="keywords" content="automação excel, macros excel, vba excel, dashboards excel, otimização de processos, automação de planilhas">
+    <meta name="author" content="ASL Software Engineering">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aslsoftwareengineering.com/pages/automacao.html">
+    <meta property="og:title" content="Automação de Excel - ASL Software Engineering">
+    <meta property="og:description" content="Automação de Excel e planilhas para empresas. Aumente a produtividade, reduza erros e otimize processos com nossas soluções personalizadas.">
+    <meta property="og:image" content="https://aslsoftwareengineering.com/pages/image/banner/automacao-banner.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aslsoftwareengineering.com/pages/automacao.html">
+    <meta property="twitter:title" content="Automação de Excel - ASL Software Engineering">
+    <meta property="twitter:description" content="Automação de Excel e planilhas para empresas. Aumente a produtividade, reduza erros e otimize processos com nossas soluções personalizadas.">
+    <meta property="twitter:image" content="https://aslsoftwareengineering.com/pages/image/banner/automacao-banner.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- Estilos específicos para a página -->
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=2EIVd25q5_YF7EowMZ7NkQkX6gfSOazDF4qBiG9F5SlKuDnsrvcV41YphTLBQkX51DdTsq29jR05LCIrGUp1v1sZkGzBoy_aewyL9QG0fm3b2LV8MSXsLsG3-oPbwKy1C8-WUGaSb1W5i_US1Y1HC9pNoxLPgEJqhRispAMW7VTQNyB20q1KB2YFq0JrpEDgyEDZgU6J4F9IEjPuhwo0vqHVcCQPCV9ne2F7BrjLl_UGxllkJoEKtmsFnr-6wB4_pXQBk6B32EttTib7wJ8ykd1OwviV6dvua8pgJHRBOBV8FCG5sOyeo7TaViTyQZ1kM0UveEY1Z-ziQWfIH14z-yyodh5dhkMlv84vNaHSKJm6_-76_J614weuI7xght29llIJkWrNuvIJbeJRlhN9evBs0Ursi59V9nspkSvm0E0DBupmTYscDmWHYNsDHuC3SI5p9PYWCOmYAuVTAxlFIKLr9XMR4q-q_Di9Zdc4CB1qYIMWhest5pXGP-FpocrU781MJk-sit-fEyXspkBK3ncImwG50QEdXxbEH0TDlelSeOvifN_0CfEZLN7HbnKks7ubLD8aFWx6OHYyXsbWofodZgKC25XWrXMsyPjQ9vgvO8SWGXl89eTRI6xK_9BR81NVyknRE1mhZ1FAJT72-ZoyB-TjBJ6LeqxlM3zgbPiYwKxzHuzYc0YOb5E16UDdgeyIXD0IRBlYwFEAK5BML4pbKvrOezmft6e5zTbpXPfZarNBy4JznRXxZ2v9MpN0qcRq-eaPUVWGoClqtyFMXmCOSt3xqO9gGaZt0in_Beu3ESnpiYmIij7az3Ku7csEbgML9-BF0w7wlbbdR2i7ZSLuZRd6XBeSgMVRGSv_S4jrNyF8XUmqZx9EK0jUAx-J_U9Kv2KCLFdaSwFOjhp4IPAH8UI1UGACCcHRzxb1op086IPqo4d-9F3MzLkQuT5I" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly92aWRhLXByaXZhdGUuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vc2Vzc2lvbkZpbGUvbFNxRzdvcHBCc0RoQXpQbHFqYjZBRi9zYW5kYm94L1NHRFNzZW4xcG82OUtEcG1UQmt0MHhfMTc0ODAyMzY5MjQ4Nl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNCeWIycGxkRzl6TDNOcGRHVXRaVzVuWlc1b1lYSnBZUzF6YjJaMGQyRnlaUzl3WVdkbGN5OWhkWFJ2YldGallXOC5odG1sP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNvbnRlbnQtU2hhMjU2PVVOU0lHTkVELVBBWUxPQUQmWC1BbXotQ3JlZGVudGlhbD1BS0lBWlYzQTJFQ1pPRkhWVDRVViUyZjIwMjUwNTIzJTJmdXMtZWFzdC0xJTJmczMlMmZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyM1QxOTU4NDBaJlgtQW16LUV4cGlyZXM9NjAzODAwJlgtQW16LVNpZ25hdHVyZT1iMTVlZDQ0YTU3YjhlNmY1ZTYwYmQ2NzM4MTFhMTcyMzlkYTAxNDkxNGZiMGJkNzk0MGVhMjdlZTk5OTc3MTAwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQlM2IlMjBmaWxlbmFtZSUyYSUzZFVURi04JTI3JTI3YXV0b21hY2FvLmh0bWwmcmVzcG9uc2UtY29udGVudC10eXBlPXRleHQlMmZodG1sJngtYW16LWNoZWNrc3VtLW1vZGU9RU5BQkxFRCZ4LWlkPUdldE9iamVjdA"/><style>
+        .feature-icon {
+            font-size: 3rem;
+            color: #17a2b8;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .stats-card {
+            background-color: #17a2b8;
+            color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            height: 100%;
+        }
+        
+        .stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stats-text {
+            font-size: 1.2rem;
+        }
+        
+        .solution-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .solution-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .solution-card-body {
+            padding: 20px;
+        }
+        
+        .solution-card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #17a2b8;
+        }
+        
+        .case-study {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .case-study-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .case-study-icon {
+            font-size: 2.5rem;
+            color: #17a2b8;
+            margin-right: 20px;
+        }
+        
+        .case-study-title {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .case-study-subtitle {
+            color: #6c757d;
+            margin: 0;
+        }
+        
+        .case-study-results {
+            background-color: #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+        .case-study-results h5 {
+            color: #17a2b8;
+            margin-bottom: 10px;
+        }
+        
+        .tech-logo {
+            height: 60px;
+            object-fit: contain;
+            margin: 1rem;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+        
+        .tech-logo:hover {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(23, 162, 184, 0.1);
+            color: #17a2b8;
+        }
+        
+        .accordion-button:focus {
+            border-color: #17a2b8;
+            box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.25);
+        }
+        
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/banner/automacao-banner.jpg');
+        }
+        
+        .cta-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('image/banner/cta-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            margin-top: 80px;
+        }
+        
+        .before-after {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .before-after-item {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .before-item {
+            background-color: #f8d7da;
+            margin-right: 10px;
+        }
+        
+        .after-item {
+            background-color: #d1e7dd;
+        }
+        
+        @media (max-width: 767px) {
+            .before-after-item {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body class="fonte_normal">
+    <!-- Header com navegação -->
+    <header class="headroom header header--fixed hide-from-print" role="banner" id="my_nav">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" id="barra">
+            <div class="container">
+                <a class="navbar-brand" href="https://aslsoftwareengineering.com">
+                    <img src="image/logotipos/logo_com_fundo_retangulo1.png" alt="Logotipo da Empresa"
+                         style="height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="criacao-sites.html">Criação de Sites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="automacao.html">Automação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="depoimentos.html">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4">Automação de Excel</h1>
+            <p class="lead">Transforme suas planilhas em ferramentas poderosas de produtividade</p>
+        </div>
+    </section>
+
+    <!-- Por que automatizar -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Por que automatizar?</h2>
+                <p class="lead">Descubra como a automação de Excel pode transformar sua empresa</p>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-3 col-6">
+                    <div class="stats-card">
+                        <div class="stats-number">70%</div>
+                        <div class="stats-text">Redução de tempo em tarefas repetitivas</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-card">
+                        <div class="stats-number">95%</div>
+                        <div class="stats-text">Redução de erros humanos</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-card">
+                        <div class="stats-number">40%</div>
+                        <div class="stats-text">Aumento de produtividade</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-card">
+                        <div class="stats-number">ROI</div>
+                        <div class="stats-text">Retorno em menos de 6 meses</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-clock feature-icon"></i>
+                            <h3 class="h4 mb-3">Economia de Tempo</h3>
+                        </div>
+                        <p>Automatize tarefas repetitivas que consomem horas do seu dia. Processos que levariam dias podem ser reduzidos a minutos ou segundos, liberando sua equipe para atividades estratégicas.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <h3 class="h4 mb-3">Redução de Erros</h3>
+                        </div>
+                        <p>Elimine erros humanos em cálculos, entrada de dados e processamento de informações. A automação garante consistência e precisão em todos os processos, aumentando a confiabilidade dos resultados.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-chart-line feature-icon"></i>
+                            <h3 class="h4 mb-3">Aumento de Produtividade</h3>
+                        </div>
+                        <p>Potencialize o desempenho da sua equipe com ferramentas que multiplicam sua capacidade de trabalho. Processos automatizados permitem que seus colaboradores foquem em análises e decisões estratégicas.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-coins feature-icon"></i>
+                            <h3 class="h4 mb-3">Redução de Custos</h3>
+                        </div>
+                        <p>Diminua custos operacionais com processos mais eficientes. A automação reduz a necessidade de horas extras, contratações adicionais e correções de erros, gerando economia significativa.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-tachometer-alt feature-icon"></i>
+                            <h3 class="h4 mb-3">Decisões Mais Rápidas</h3>
+                        </div>
+                        <p>Tenha acesso instantâneo a informações atualizadas e relatórios dinâmicos. Dashboards automatizados fornecem visibilidade em tempo real para tomada de decisões ágeis e baseadas em dados.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-expand-arrows-alt feature-icon"></i>
+                            <h3 class="h4 mb-3">Escalabilidade</h3>
+                        </div>
+                        <p>Processos automatizados crescem com seu negócio sem aumento proporcional de custos. Lide com volumes maiores de dados e operações sem necessidade de expansão significativa da equipe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Nossas Soluções de Automação -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nossas Soluções de Automação</h2>
+                <p class="lead">Ferramentas personalizadas para otimizar seus processos</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="solution-card">
+                        <img src="image/automacao/macros-vba.jpg" alt="Macros e VBA" class="card-img-top">
+                        <div class="solution-card-body">
+                            <h3 class="solution-card-title">Macros e VBA</h3>
+                            <p>Automatize tarefas repetitivas com macros personalizadas e programação VBA (Visual Basic for Applications). Nossas soluções permitem:</p>
+                            <ul>
+                                <li>Processamento automático de dados</li>
+                                <li>Geração de relatórios com um clique</li>
+                                <li>Importação e exportação de dados entre sistemas</li>
+                                <li>Validação e limpeza automática de dados</li>
+                                <li>Interfaces personalizadas com formulários</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="solution-card">
+                        <img src="image/automacao/dashboards.jpg" alt="Dashboards Interativos" class="card-img-top">
+                        <div class="solution-card-body">
+                            <h3 class="solution-card-title">Dashboards Interativos</h3>
+                            <p>Transforme dados brutos em informações visuais e acionáveis com dashboards dinâmicos. Nossos painéis oferecem:</p>
+                            <ul>
+                                <li>Visualização clara de KPIs e métricas importantes</li>
+                                <li>Filtros interativos para análise personalizada</li>
+                                <li>Atualização automática de dados</li>
+                                <li>Gráficos e tabelas dinâmicas avançados</li>
+                                <li>Alertas visuais para valores críticos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="solution-card">
+                        <img src="image/automacao/integracao.jpg" alt="Integração com Outras Ferramentas" class="card-img-top">
+                        <div class="solution-card-body">
+                            <h3 class="solution-card-title">Integração com Outras Ferramentas</h3>
+                            <p>Conecte o Excel com outros sistemas e ferramentas para criar fluxos de trabalho contínuos. Nossas integrações incluem:</p>
+                            <ul>
+                                <li>Conexão com bancos de dados (SQL, Access, etc.)</li>
+                                <li>Integração com sistemas ERP e CRM</li>
+                                <li>Importação de dados de APIs externas</li>
+                                <li>Sincronização com ferramentas de colaboração</li>
+                                <li>Exportação automatizada para múltiplos formatos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="solution-card">
+                        <img src="image/automacao/relatorios.jpg" alt="Automação de Relatórios" class="card-img-top">
+                        <div class="solution-card-body">
+                            <h3 class="solution-card-title">Automação de Relatórios</h3>
+                            <p>Elimine o trabalho manual de criação de relatórios com soluções automatizadas. Nossos sistemas permitem:</p>
+                            <ul>
+                                <li>Geração programada de relatórios (diários, semanais, mensais)</li>
+                                <li>Distribuição automática por email</li>
+                                <li>Formatação profissional e consistente</li>
+                                <li>Consolidação de dados de múltiplas fontes</li>
+                                <li>Exportação para PDF, PowerPoint e outros formatos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Casos de Uso -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Casos de Uso</h2>
+                <p class="lead">Exemplos reais de como a automação transformou processos</p>
+            </div>
+            
+            <div class="case-study">
+                <div class="case-study-header">
+                    <div class="case-study-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div>
+                        <h3 class="case-study-title">Automação de Relatórios Financeiros</h3>
+                        <p class="case-study-subtitle">Empresa do setor financeiro</p>
+                    </div>
+                </div>
+                
+                <p>Uma empresa do setor financeiro gastava aproximadamente 3 dias por mês para consolidar dados de diferentes sistemas e gerar relatórios gerenciais. Desenvolvemos uma solução automatizada que importa dados de múltiplas fontes, realiza cálculos complexos e gera relatórios padronizados.</p>
+                
+                <div class="before-after">
+                    <div class="before-after-item before-item">
+                        <h5><i class="fas fa-times-circle me-2"></i> Antes</h5>
+                        <ul>
+                            <li>3 dias de trabalho manual por mês</li>
+                            <li>Erros frequentes de digitação e cálculo</li>
+                            <li>Atrasos na entrega dos relatórios</li>
+                            <li>Inconsistências entre diferentes relatórios</li>
+                        </ul>
+                    </div>
+                    <div class="before-after-item after-item">
+                        <h5><i class="fas fa-check-circle me-2"></i> Depois</h5>
+                        <ul>
+                            <li>Geração de relatórios em 15 minutos</li>
+                            <li>Eliminação de erros manuais</li>
+                            <li>Relatórios disponíveis no primeiro dia útil</li>
+                            <li>Consistência garantida em todos os documentos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="case-study-results">
+                    <h5>Resultados:</h5>
+                    <p>Redução de 98% no tempo de geração de relatórios, eliminação de erros e economia estimada de R$ 15.000 mensais em horas de trabalho.</p>
+                </div>
+            </div>
+            
+            <div class="case-study">
+                <div class="case-study-header">
+                    <div class="case-study-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <div>
+                        <h3 class="case-study-title">Dashboard de Controle de Estoque</h3>
+                        <p class="case-study-subtitle">Empresa do setor de varejo</p>
+                    </div>
+                </div>
+                
+                <p>Uma rede de varejo com múltiplas lojas enfrentava dificuldades para acompanhar níveis de estoque e identificar necessidades de reposição. Criamos um dashboard interativo que consolida dados de todas as lojas e fornece visibilidade em tempo real do estoque.</p>
+                
+                <div class="before-after">
+                    <div class="before-after-item before-item">
+                        <h5><i class="fas fa-times-circle me-2"></i> Antes</h5>
+                        <ul>
+                            <li>Ruptura frequente de estoque</li>
+                            <li>Excesso de produtos de baixo giro</li>
+                            <li>Decisões baseadas em dados desatualizados</li>
+                            <li>Horas diárias para consolidar informações</li>
+                        </ul>
+                    </div>
+                    <div class="before-after-item after-item">
+                        <h5><i class="fas fa-check-circle me-2"></i> Depois</h5>
+                        <ul>
+                            <li>Redução de 85% em ruptura de estoque</li>
+                            <li>Otimização do capital investido em estoque</li>
+                            <li>Decisões baseadas em dados em tempo real</li>
+                            <li>Atualização automática a cada 30 minutos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="case-study-results">
+                    <h5>Resultados:</h5>
+                    <p>Aumento de 23% nas vendas devido à melhor disponibilidade de produtos e redução de 30% no capital imobilizado em estoque.</p>
+                </div>
+            </div>
+            
+            <div class="case-study">
+                <div class="case-study-header">
+                    <div class="case-study-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <div>
+                        <h3 class="case-study-title">Automação de Faturamento</h3>
+                        <p class="case-study-subtitle">Empresa de serviços</p>
+                    </div>
+                </div>
+                
+                <p>Uma empresa de serviços com centenas de clientes gastava uma semana por mês para gerar faturas, verificar pagamentos e enviar cobranças. Desenvolvemos um sistema automatizado que integra dados de prestação de serviços, gera faturas e monitora pagamentos.</p>
+                
+                <div class="before-after">
+                    <div class="before-after-item before-item">
+                        <h5><i class="fas fa-times-circle me-2"></i> Antes</h5>
+                        <ul>
+                            <li>5 dias de trabalho por mês para faturamento</li>
+                            <li>Atrasos frequentes na emissão de faturas</li>
+                            <li>Dificuldade para identificar pagamentos pendentes</li>
+                            <li>Erros de cálculo e cobrança</li>
+                        </ul>
+                    </div>
+                    <div class="before-after-item after-item">
+                        <h5><i class="fas fa-check-circle me-2"></i> Depois</h5>
+                        <ul>
+                            <li>Faturamento completo em 2 horas</li>
+                            <li>Emissão de faturas no primeiro dia do mês</li>
+                            <li>Monitoramento automático de pagamentos</li>
+                            <li>Precisão garantida em todos os cálculos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="case-study-results">
+                    <h5>Resultados:</h5>
+                    <p>Redução de 95% no tempo de faturamento, diminuição de 60% no prazo médio de recebimento e economia anual estimada em R$ 120.000.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tecnologias Utilizadas -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tecnologias Utilizadas</h2>
+                <p class="lead">Ferramentas avançadas para soluções de automação eficientes</p>
+            </div>
+            
+            <div class="row justify-content-center text-center">
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/excel.png" alt="Microsoft Excel" class="tech-logo">
+                    <p>Microsoft Excel</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/vba.png" alt="VBA" class="tech-logo">
+                    <p>VBA</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/power-query.png" alt="Power Query" class="tech-logo">
+                    <p>Power Query</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/power-pivot.png" alt="Power Pivot" class="tech-logo">
+                    <p>Power Pivot</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/power-bi.png" alt="Power BI" class="tech-logo">
+                    <p>Power BI</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/sql.png" alt="SQL" class="tech-logo">
+                    <p>SQL</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/python.png" alt="Python" class="tech-logo">
+                    <p>Python</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/office365.png" alt="Office 365" class="tech-logo">
+                    <p>Office 365</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Perguntas Frequentes -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Perguntas Frequentes</h2>
+                <p class="lead">Respostas para as dúvidas mais comuns sobre automação de Excel</p>
+            </div>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Quanto tempo leva para desenvolver uma solução de automação?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            O tempo de desenvolvimento varia conforme a complexidade do projeto. Automações simples podem ser implementadas em poucos dias, enquanto soluções mais complexas podem levar algumas semanas. Durante nossa análise inicial, avaliamos seus processos e fornecemos um cronograma detalhado com prazos específicos para seu projeto.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            É necessário ter conhecimento avançado em Excel para utilizar as soluções automatizadas?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Não! Desenvolvemos nossas soluções com foco na usabilidade, criando interfaces intuitivas que podem ser operadas por usuários com conhecimento básico de Excel. Além disso, fornecemos treinamento completo e documentação detalhada para garantir que sua equipe possa utilizar todas as funcionalidades com facilidade.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            As soluções funcionam em qualquer versão do Excel?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Nossas soluções são desenvolvidas para funcionar nas versões mais recentes do Excel (2016 em diante), incluindo Excel para Microsoft 365. Para versões mais antigas, realizamos adaptações específicas para garantir compatibilidade. Durante a fase de planejamento, avaliamos seu ambiente tecnológico para garantir que a solução seja totalmente compatível com sua infraestrutura.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            É possível integrar a automação de Excel com outros sistemas da empresa?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sim! Desenvolvemos soluções que podem se integrar com diversos sistemas, como ERPs, CRMs, bancos de dados e outras ferramentas utilizadas pela sua empresa. Utilizamos tecnologias como ODBC, APIs, Power Query e outras ferramentas para estabelecer conexões seguras e eficientes entre o Excel e seus sistemas existentes.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Vocês oferecem suporte após a implementação da solução?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutamente! Oferecemos suporte técnico contínuo após a implementação, garantindo que sua solução continue funcionando perfeitamente. Nossos planos de suporte incluem correção de bugs, ajustes conforme necessário e assistência para dúvidas dos usuários. Também disponibilizamos pacotes de manutenção para atualizações e melhorias contínuas da sua solução.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <h2 class="display-5 mb-4">Pronto para automatizar seus processos?</h2>
+            <p class="lead mb-5">Entre em contato hoje mesmo para uma avaliação gratuita e descubra como podemos aumentar a eficiência da sua empresa.</p>
+            <a href="contato.html" class="btn btn-primary btn-lg px-5 py-3">Solicitar Avaliação Gratuita</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>ASL Software Engineering</h5>
+                    <p>Soluções tecnológicas personalizadas para transformar e otimizar o seu negócio.</p>
+                    <p>
+                        <a href="privacidade.html" class="text-white">Política de Privacidade</a>
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white">Home</a></li>
+                        <li><a href="quem_somos.html" class="text-white">Quem Somos</a></li>
+                        <li><a href="servicos.html" class="text-white">Serviços</a></li>
+                        <li><a href="criacao-sites.html" class="text-white">Criação de Sites</a></li>
+                        <li><a href="automacao.html" class="text-white">Automação</a></li>
+                        <li><a href="portfolio.html" class="text-white">Portfólio</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP - Brasil</p>
+                        <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope me-2"></i> contato@aslsoftwareengineering.com</p>
+                    </address>
+                    <div class="social-links mt-3">
+                        <a href="https://www.facebook.com/ASL.solucionando.problemas/" class="text-white me-3" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ajeitandoseulado/" class="text-white me-3" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-white" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 ASL Software Engineering. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/headroom.js"></script>
+    <script src="js/Q.headroom.js"></script>
+    <script src="js/common.js"></script>
+    
+    <!-- Script específico para esta página -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animação para estatísticas
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.stats-card').forEach(card => {
+                observer.observe(card);
+            });
+            
+            document.querySelectorAll('.case-study').forEach(study => {
+                observer.observe(study);
+            });
+        });
+    </script>
+</body>
+</html>

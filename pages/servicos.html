@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Programação - ASL Software Engineering</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Serviços de programação e desenvolvimento de software personalizados. Criação de sistemas, sites, automação de Excel e consultoria em TI para empresas.">
+    <meta name="keywords" content="serviços de programação, desenvolvimento de software, criação de sistemas, consultoria em TI, integração de sistemas">
+    <meta name="author" content="ASL Software Engineering">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aslsoftwareengineering.com/pages/servicos.html">
+    <meta property="og:title" content="Serviços de Programação - ASL Software Engineering">
+    <meta property="og:description" content="Serviços de programação e desenvolvimento de software personalizados. Criação de sistemas, sites, automação de Excel e consultoria em TI para empresas.">
+    <meta property="og:image" content="https://aslsoftwareengineering.com/pages/image/banner/servicos-banner.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aslsoftwareengineering.com/pages/servicos.html">
+    <meta property="twitter:title" content="Serviços de Programação - ASL Software Engineering">
+    <meta property="twitter:description" content="Serviços de programação e desenvolvimento de software personalizados. Criação de sistemas, sites, automação de Excel e consultoria em TI para empresas.">
+    <meta property="twitter:image" content="https://aslsoftwareengineering.com/pages/image/banner/servicos-banner.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- Estilos específicos para a página -->
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=m-WuOG1uLd08UcnWPyLV4P3nndsgqBIa009VPS5QOzmaZmOAEueMce3WDsKMCj4x_6k1-JoOKUYJTGEPxcwBDwWrQ2_V1hmMILMC68DxZEzxeJpTD_ta7E0jWfIitfvxrt5RyQ5vVmwBhih5F8mLkRrM7-KWUuZR5QhZJE3NRllU29SD6EwoB6A4Zw07q_Nj8nr4kUBjUt3O8cZnuBUfBXvhGtBSmhfXyUk6hTReypyXnmVuUFdfxl7bGeAZPqD8rIcBT54rKO9l6YfBjt2C5XoaFEghrCcqf8aolAdbBkB5TDfALxND0PhWpb7tfPGLu67bqcJ7gnGnQzezKdAJAsEQaj2OuYHh10ZIQlb00ZKTT50KZ50AdZwuSyu-aaxFizoqv8jFe-PftD_b9iz_U0M7OYkGVEn0gnL2Kr3obm89nyoqoEIuIvSpXeoKXt_u14q8EIH4CYNSgFRKQ4M9Lka_3pMnWk-C1T-_LEWAu-RtfMjK9KgaXHwEpssnRSilN4MEN860lWcXEU4Nu5dJ_vhjJfdhEPLRqMbi3k20lT4zVQNuPI797VEVJoMMUhAVhykO4RNDE6L5IOTWO4OQarYZQNq9iDAVGbqSFDr43PLxMMIIK3naO5l-ROWteLqJxyh2-6ib3zG8hX4B3Qby0iHqAkQk0v6q-cZ0yHpwryZVvbNnjcGqyaMLSSIH-1lIEt46ybxwYQLRSdTWAOABi9Rp5YCTpqhb10Fjl6tx1Z2jTzhwuOPPTv2cYOP5GjmtvTj3_uMboxZTuSuijNzSSwdXLwFpNjHKh7nHj0hgqwzvm8XCeZxkRwTs1uDJ5KW2mWhzVVvByTDmbMuHLPbYhMPEn7IauZzUDsz3LKAGfJ3-VosrdCet3TbWVhnsvxeYfRlAf_FNw4zhxYbKI_D3nspgD2jzn5jugSksCUa_HSK9tOfOmWy5HtBskCr8ho5k" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly92aWRhLXByaXZhdGUuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vc2Vzc2lvbkZpbGUvbFNxRzdvcHBCc0RoQXpQbHFqYjZBRi9zYW5kYm94L1NHRFNzZW4xcG82OUtEcG1UQmt0MHhfMTc0ODAyMzY5MjQ4Nl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNCeWIycGxkRzl6TDNOcGRHVXRaVzVuWlc1b1lYSnBZUzF6YjJaMGQyRnlaUzl3WVdkbGN5OXpaWEoyYVdOdmN3Lmh0bWw_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ29udGVudC1TaGEyNTY9VU5TSUdORUQtUEFZTE9BRCZYLUFtei1DcmVkZW50aWFsPUFLSUFaVjNBMkVDWk9GSFZUNFVWJTJmMjAyNTA1MjMlMmZ1cy1lYXN0LTElMmZzMyUyZmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTIzVDE5NTgyMlomWC1BbXotRXhwaXJlcz02MDM4MDAmWC1BbXotU2lnbmF0dXJlPTczNDE2NThlMGRmN2MwMTM3MTJiODQ2ZDA0OTE3MGQ4MDEzZTBjZDEzMWIwOWE5MTg1M2I2ZWI3N2U2Y2FmM2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTJhJTNkVVRGLTglMjclMjdzZXJ2aWNvcy5odG1sJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT10ZXh0JTJmaHRtbCZ4LWFtei1jaGVja3N1bS1tb2RlPUVOQUJMRUQmeC1pZD1HZXRPYmplY3Q"/><style>
+        .service-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card-icon {
+            font-size: 3rem;
+            color: #17a2b8;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card-header {
+            background-color: #17a2b8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .service-card-body {
+            padding: 20px;
+        }
+        
+        .service-card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .service-detail {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-detail-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .service-detail-icon {
+            font-size: 2.5rem;
+            color: #17a2b8;
+            margin-right: 20px;
+        }
+        
+        .service-detail-title {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .service-detail-subtitle {
+            color: #6c757d;
+            margin: 5px 0 0 0;
+        }
+        
+        .service-feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .service-feature-icon {
+            color: #17a2b8;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            margin-top: 3px;
+        }
+        
+        .methodology-step {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .methodology-step-number {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #17a2b8;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .methodology-step-content {
+            flex-grow: 1;
+        }
+        
+        .methodology-step-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-table {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-table th {
+            background-color: #17a2b8;
+            color: white;
+        }
+        
+        .pricing-table .check {
+            color: #28a745;
+            font-size: 1.2rem;
+        }
+        
+        .pricing-table .times {
+            color: #dc3545;
+            font-size: 1.2rem;
+        }
+        
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/banner/servicos-banner.jpg');
+        }
+        
+        .cta-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('image/banner/cta-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            margin-top: 80px;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body class="fonte_normal">
+    <!-- Header com navegação -->
+    <header class="headroom header header--fixed hide-from-print" role="banner" id="my_nav">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" id="barra">
+            <div class="container">
+                <a class="navbar-brand" href="https://aslsoftwareengineering.com">
+                    <img src="image/logotipos/logo_com_fundo_retangulo1.png" alt="Logotipo da Empresa"
+                         style="height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="criacao-sites.html">Criação de Sites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="automacao.html">Automação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="depoimentos.html">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4">Nossos Serviços de Programação</h1>
+            <p class="lead">Soluções tecnológicas personalizadas para transformar seu negócio</p>
+        </div>
+    </section>
+
+    <!-- Grid de serviços principais -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Serviços Principais</h2>
+                <p class="lead">Conheça nossas soluções tecnológicas para o seu negócio</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-laptop-code service-card-icon"></i>
+                            <h3 class="h4">Desenvolvimento de Software</h3>
+                        </div>
+                        <div class="service-card-body">
+                            <p>Criamos sistemas personalizados que atendem às necessidades específicas do seu negócio, automatizando processos e aumentando a eficiência operacional.</p>
+                            <ul class="mt-3">
+                                <li>Sistemas web responsivos</li>
+                                <li>Aplicações desktop</li>
+                                <li>Integrações com APIs</li>
+                                <li>Banco de dados otimizados</li>
+                            </ul>
+                            <a href="#software" class="btn btn-outline-primary mt-3">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-globe service-card-icon"></i>
+                            <h3 class="h4">Criação de Sites</h3>
+                        </div>
+                        <div class="service-card-body">
+                            <p>Desenvolvemos sites profissionais, responsivos e otimizados para SEO, garantindo uma presença digital eficiente e alinhada com os objetivos do seu negócio.</p>
+                            <ul class="mt-3">
+                                <li>Sites institucionais</li>
+                                <li>Lojas virtuais</li>
+                                <li>Landing pages</li>
+                                <li>Blogs e portais</li>
+                            </ul>
+                            <a href="criacao-sites.html" class="btn btn-outline-primary mt-3">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-file-excel service-card-icon"></i>
+                            <h3 class="h4">Automação de Excel</h3>
+                        </div>
+                        <div class="service-card-body">
+                            <p>Transformamos planilhas comuns em ferramentas poderosas de produtividade, automatizando tarefas repetitivas e criando dashboards interativos para análise de dados.</p>
+                            <ul class="mt-3">
+                                <li>Macros e VBA</li>
+                                <li>Dashboards interativos</li>
+                                <li>Automação de relatórios</li>
+                                <li>Integração com sistemas</li>
+                            </ul>
+                            <a href="automacao.html" class="btn btn-outline-primary mt-3">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-lightbulb service-card-icon"></i>
+                            <h3 class="h4">Consultoria em TI</h3>
+                        </div>
+                        <div class="service-card-body">
+                            <p>Oferecemos orientação estratégica para ajudar sua empresa a tomar decisões tecnológicas alinhadas com seus objetivos de negócio e otimizar seus recursos de TI.</p>
+                            <ul class="mt-3">
+                                <li>Análise de processos</li>
+                                <li>Planejamento tecnológico</li>
+                                <li>Seleção de ferramentas</li>
+                                <li>Gestão de projetos de TI</li>
+                            </ul>
+                            <a href="#consultoria" class="btn btn-outline-primary mt-3">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-tools service-card-icon"></i>
+                            <h3 class="h4">Manutenção e Suporte</h3>
+                        </div>
+                        <div class="service-card-body">
+                            <p>Garantimos o funcionamento contínuo e eficiente dos seus sistemas e aplicações, oferecendo suporte técnico especializado e manutenção preventiva e corretiva.</p>
+                            <ul class="mt-3">
+                                <li>Suporte técnico</li>
+                                <li>Manutenção corretiva</li>
+                                <li>Atualizações de segurança</li>
+                                <li>Monitoramento de sistemas</li>
+                            </ul>
+                            <a href="#suporte" class="btn btn-outline-primary mt-3">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <i class="fas fa-network-wired service-card-icon"></i>
+                            <h3 class="h4">Integração de Sistemas</h3>
+                        </div>
+                        <div class="service-card-body">
+                            <p>Conectamos diferentes sistemas e aplicações para criar um ecossistema digital coeso, eliminando silos de informação e aumentando a eficiência operacional.</p>
+                            <ul class="mt-3">
+                                <li>Integração com ERPs</li>
+                                <li>APIs personalizadas</li>
+                                <li>Sincronização de dados</li>
+                                <li>Automação de fluxos</li>
+                            </ul>
+                            <a href="#integracao" class="btn btn-outline-primary mt-3">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Detalhamento dos serviços -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Detalhamento dos Serviços</h2>
+                <p class="lead">Conheça em profundidade nossas soluções tecnológicas</p>
+            </div>
+            
+            <!-- Desenvolvimento de Software -->
+            <div id="software" class="service-detail">
+                <div class="service-detail-header">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <h3 class="service-detail-title">Desenvolvimento de Software</h3>
+                        <p class="service-detail-subtitle">Sistemas personalizados para seu negócio</p>
+                    </div>
+                </div>
+                
+                <p>Desenvolvemos soluções de software sob medida para atender às necessidades específicas do seu negócio. Nossos sistemas são projetados para automatizar processos, aumentar a produtividade e fornecer insights valiosos para a tomada de decisões.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Principais Benefícios</h4>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Personalização Total</strong>
+                                <p>Sistemas desenvolvidos especificamente para seus processos e necessidades, sem limitações de soluções genéricas.</p>
+                            </div>
+                        </div>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Integração Completa</strong>
+                                <p>Integração perfeita com seus sistemas existentes, eliminando silos de informação e duplicidade de trabalho.</p>
+                            </div>
+                        </div>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Escalabilidade</strong>
+                                <p>Sistemas que crescem com seu negócio, permitindo expansões e adaptações conforme suas necessidades evoluem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Tecnologias Utilizadas</h4>
+                        <div>
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">C#</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Angular</span>
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">SQL Server</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">Azure</span>
+                        </div>
+                        
+                        <h4 class="mt-4 mb-3">Tipos de Aplicações</h4>
+                        <ul>
+                            <li>Sistemas de gestão empresarial</li>
+                            <li>CRMs e ERPs personalizados</li>
+                            <li>Sistemas de controle de estoque</li>
+                            <li>Plataformas de e-commerce</li>
+                            <li>Sistemas de gestão financeira</li>
+                            <li>Aplicações web e desktop</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="portfolio.html#software" class="btn btn-primary">Ver Projetos no Portfólio</a>
+                </div>
+            </div>
+            
+            <!-- Consultoria em TI -->
+            <div id="consultoria" class="service-detail">
+                <div class="service-detail-header">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div>
+                        <h3 class="service-detail-title">Consultoria em TI</h3>
+                        <p class="service-detail-subtitle">Orientação estratégica para decisões tecnológicas</p>
+                    </div>
+                </div>
+                
+                <p>Nossa consultoria em TI ajuda empresas a tomar decisões tecnológicas alinhadas com seus objetivos de negócio. Analisamos seus processos atuais, identificamos oportunidades de melhoria e recomendamos as melhores soluções para otimizar seus recursos de TI.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Serviços Oferecidos</h4>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Análise de Processos</strong>
+                                <p>Mapeamento detalhado dos processos atuais para identificar gargalos e oportunidades de otimização.</p>
+                            </div>
+                        </div>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Planejamento Tecnológico</strong>
+                                <p>Desenvolvimento de roadmaps tecnológicos alinhados com os objetivos estratégicos da empresa.</p>
+                            </div>
+                        </div>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Seleção de Ferramentas</strong>
+                                <p>Avaliação imparcial de soluções disponíveis no mercado para escolher as mais adequadas às suas necessidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Benefícios</h4>
+                        <ul>
+                            <li>Redução de custos operacionais</li>
+                            <li>Aumento de produtividade</li>
+                            <li>Decisões tecnológicas mais assertivas</li>
+                            <li>Alinhamento entre TI e objetivos de negócio</li>
+                            <li>Otimização de recursos tecnológicos</li>
+                            <li>Preparação para crescimento e escalabilidade</li>
+                        </ul>
+                        
+                        <h4 class="mt-4 mb-3">Áreas de Especialização</h4>
+                        <ul>
+                            <li>Transformação digital</li>
+                            <li>Segurança da informação</li>
+                            <li>Infraestrutura de TI</li>
+                            <li>Gestão de dados</li>
+                            <li>Arquitetura de sistemas</li>
+                            <li>Governança de TI</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="contato.html" class="btn btn-primary">Solicitar Consultoria</a>
+                </div>
+            </div>
+            
+            <!-- Manutenção e Suporte -->
+            <div id="suporte" class="service-detail">
+                <div class="service-detail-header">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div>
+                        <h3 class="service-detail-title">Manutenção e Suporte</h3>
+                        <p class="service-detail-subtitle">Garantia de funcionamento contínuo dos seus sistemas</p>
+                    </div>
+                </div>
+                
+                <p>Nossos serviços de manutenção e suporte garantem o funcionamento contínuo e eficiente dos seus sistemas e aplicações. Oferecemos suporte técnico especializado, manutenção preventiva e corretiva, e monitoramento constante para identificar e resolver problemas antes que afetem seu negócio.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Tipos de Suporte</h4>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Suporte Técnico</strong>
+                                <p>Atendimento especializado para resolver dúvidas e problemas dos usuários, disponível por telefone, email e chat.</p>
+                            </div>
+                        </div>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Manutenção Corretiva</strong>
+                                <p>Identificação e correção rápida de bugs, erros e falhas que possam surgir nos sistemas.</p>
+                            </div>
+                        </div>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Manutenção Preventiva</strong>
+                                <p>Verificações periódicas e atualizações para prevenir problemas e garantir o desempenho ideal dos sistemas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Planos de Suporte</h4>
+                        <ul>
+                            <li><strong>Básico:</strong> Suporte em horário comercial, tempo de resposta em até 24 horas</li>
+                            <li><strong>Padrão:</strong> Suporte estendido, tempo de resposta em até 8 horas</li>
+                            <li><strong>Premium:</strong> Suporte 24/7, tempo de resposta em até 2 horas</li>
+                            <li><strong>Personalizado:</strong> Plano adaptado às necessidades específicas da sua empresa</li>
+                        </ul>
+                        
+                        <h4 class="mt-4 mb-3">Serviços Incluídos</h4>
+                        <ul>
+                            <li>Correção de bugs e erros</li>
+                            <li>Atualizações de segurança</li>
+                            <li>Backup e recuperação de dados</li>
+                            <li>Monitoramento de desempenho</li>
+                            <li>Otimização de sistemas</li>
+                            <li>Documentação técnica</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="contato.html" class="btn btn-primary">Conhecer Planos de Suporte</a>
+                </div>
+            </div>
+            
+            <!-- Integração de Sistemas -->
+            <div id="integracao" class="service-detail">
+                <div class="service-detail-header">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <h3 class="service-detail-title">Integração de Sistemas</h3>
+                        <p class="service-detail-subtitle">Conectando suas ferramentas para maior eficiência</p>
+                    </div>
+                </div>
+                
+                <p>Nossos serviços de integração conectam diferentes sistemas e aplicações para criar um ecossistema digital coeso. Eliminamos silos de informação, automatizamos a transferência de dados entre sistemas e criamos fluxos de trabalho eficientes que aumentam a produtividade da sua empresa.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Soluções de Integração</h4>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>APIs Personalizadas</strong>
+                                <p>Desenvolvimento de interfaces de programação que permitem a comunicação eficiente entre diferentes sistemas.</p>
+                            </div>
+                        </div>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Middleware</strong>
+                                <p>Implementação de camadas intermediárias que facilitam a comunicação entre aplicações com diferentes tecnologias.</p>
+                            </div>
+                        </div>
+                        <div class="service-feature">
+                            <div class="service-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <strong>ETL (Extract, Transform, Load)</strong>
+                                <p>Processos automatizados para extrair, transformar e carregar dados entre diferentes sistemas e formatos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Benefícios</h4>
+                        <ul>
+                            <li>Eliminação de entrada manual de dados</li>
+                            <li>Redução de erros e inconsistências</li>
+                            <li>Acesso centralizado às informações</li>
+                            <li>Automação de processos entre sistemas</li>
+                            <li>Visão unificada dos dados da empresa</li>
+                            <li>Aumento da eficiência operacional</li>
+                        </ul>
+                        
+                        <h4 class="mt-4 mb-3">Sistemas Comumente Integrados</h4>
+                        <ul>
+                            <li>ERPs e sistemas de gestão</li>
+                            <li>CRMs e plataformas de atendimento</li>
+                            <li>E-commerce e sistemas de estoque</li>
+                            <li>Sistemas financeiros e contábeis</li>
+                            <li>Ferramentas de marketing e vendas</li>
+                            <li>Plataformas de logística e entrega</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="portfolio.html#integracao" class="btn btn-primary">Ver Projetos de Integração</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Metodologia de Trabalho -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Metodologia de Trabalho</h2>
+                <p class="lead">Nosso processo para entregar soluções de qualidade</p>
+            </div>
+            
+            <div class="methodology-step">
+                <div class="methodology-step-number">1</div>
+                <div class="methodology-step-content">
+                    <h3 class="methodology-step-title">Levantamento de Requisitos</h3>
+                    <p>Realizamos reuniões detalhadas para entender profundamente suas necessidades, objetivos e desafios. Documentamos todos os requisitos funcionais e não-funcionais para garantir que a solução atenda perfeitamente às suas expectativas.</p>
+                </div>
+            </div>
+            
+            <div class="methodology-step">
+                <div class="methodology-step-number">2</div>
+                <div class="methodology-step-content">
+                    <h3 class="methodology-step-title">Análise e Planejamento</h3>
+                    <p>Nossa equipe analisa os requisitos levantados, define a arquitetura da solução, escolhe as tecnologias mais adequadas e elabora um plano detalhado de desenvolvimento. Nesta fase, também estabelecemos cronogramas e marcos do projeto.</p>
+                </div>
+            </div>
+            
+            <div class="methodology-step">
+                <div class="methodology-step-number">3</div>
+                <div class="methodology-step-content">
+                    <h3 class="methodology-step-title">Design e Prototipagem</h3>
+                    <p>Criamos protótipos interativos e wireframes que permitem visualizar a solução antes do desenvolvimento. Esta etapa facilita ajustes e refinamentos no design e na experiência do usuário, economizando tempo e recursos.</p>
+                </div>
+            </div>
+            
+            <div class="methodology-step">
+                <div class="methodology-step-number">4</div>
+                <div class="methodology-step-content">
+                    <h3 class="methodology-step-title">Desenvolvimento</h3>
+                    <p>Utilizamos metodologias ágeis para desenvolver a solução em ciclos iterativos, permitindo acompanhamento constante e ajustes durante o processo. Seguimos as melhores práticas de programação e realizamos revisões de código para garantir qualidade.</p>
+                </div>
+            </div>
+            
+            <div class="methodology-step">
+                <div class="methodology-step-number">5</div>
+                <div class="methodology-step-content">
+                    <h3 class="methodology-step-title">Testes e Qualidade</h3>
+                    <p>Realizamos testes rigorosos de funcionalidade, desempenho, segurança e usabilidade para garantir que a solução esteja livre de bugs e atenda a todos os requisitos. Utilizamos ferramentas automatizadas e testes manuais para validação completa.</p>
+                </div>
+            </div>
+            
+            <div class="methodology-step">
+                <div class="methodology-step-number">6</div>
+                <div class="methodology-step-content">
+                    <h3 class="methodology-step-title">Implantação</h3>
+                    <p>Realizamos a implantação da solução em ambiente de produção, garantindo uma transição suave e minimizando impactos nas operações. Configuramos servidores, bancos de dados e realizamos migrações de dados quando necessário.</p>
+                </div>
+            </div>
+            
+            <div class="methodology-step">
+                <div class="methodology-step-number">7</div>
+                <div class="methodology-step-content">
+                    <h3 class="methodology-step-title">Treinamento e Documentação</h3>
+                    <p>Fornecemos treinamento completo para sua equipe e documentação detalhada da solução, garantindo que todos possam utilizar e administrar o sistema com eficiência. Criamos manuais de usuário, documentação técnica e vídeos tutoriais.</p>
+                </div>
+            </div>
+            
+            <div class="methodology-step">
+                <div class="methodology-step-number">8</div>
+                <div class="methodology-step-content">
+                    <h3 class="methodology-step-title">Suporte Contínuo</h3>
+                    <p>Oferecemos suporte técnico especializado após a implantação, garantindo que sua solução continue funcionando perfeitamente. Realizamos manutenções preventivas, atualizações de segurança e melhorias contínuas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Planos e Preços -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Planos e Preços</h2>
+                <p class="lead">Soluções para empresas de todos os portes</p>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-striped pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Características</th>
+                            <th class="text-center">Plano Básico</th>
+                            <th class="text-center">Plano Padrão</th>
+                            <th class="text-center">Plano Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Consultoria inicial</td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvimento personalizado</td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Testes e garantia de qualidade</td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Treinamento de usuários</td>
+                            <td class="text-center">Básico</td>
+                            <td class="text-center">Completo</td>
+                            <td class="text-center">Avançado</td>
+                        </tr>
+                        <tr>
+                            <td>Documentação técnica</td>
+                            <td class="text-center">Básica</td>
+                            <td class="text-center">Detalhada</td>
+                            <td class="text-center">Completa</td>
+                        </tr>
+                        <tr>
+                            <td>Suporte técnico</td>
+                            <td class="text-center">Horário comercial</td>
+                            <td class="text-center">Estendido</td>
+                            <td class="text-center">24/7</td>
+                        </tr>
+                        <tr>
+                            <td>Tempo de resposta</td>
+                            <td class="text-center">24 horas</td>
+                            <td class="text-center">8 horas</td>
+                            <td class="text-center">2 horas</td>
+                        </tr>
+                        <tr>
+                            <td>Atualizações e melhorias</td>
+                            <td class="text-center"><i class="fas fa-times times"></i></td>
+                            <td class="text-center">Trimestrais</td>
+                            <td class="text-center">Mensais</td>
+                        </tr>
+                        <tr>
+                            <td>Monitoramento proativo</td>
+                            <td class="text-center"><i class="fas fa-times times"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Gerente de projeto dedicado</td>
+                            <td class="text-center"><i class="fas fa-times times"></i></td>
+                            <td class="text-center"><i class="fas fa-times times"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Consultoria estratégica contínua</td>
+                            <td class="text-center"><i class="fas fa-times times"></i></td>
+                            <td class="text-center"><i class="fas fa-times times"></i></td>
+                            <td class="text-center"><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="text-center"><a href="contato.html" class="btn btn-outline-primary">Solicitar Orçamento</a></td>
+                            <td class="text-center"><a href="contato.html" class="btn btn-primary">Solicitar Orçamento</a></td>
+                            <td class="text-center"><a href="contato.html" class="btn btn-outline-primary">Solicitar Orçamento</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p>Todos os planos podem ser personalizados de acordo com as necessidades específicas da sua empresa.</p>
+                <p>Entre em contato para uma avaliação detalhada e orçamento personalizado.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <h2 class="display-5 mb-4">Pronto para transformar seu negócio com tecnologia?</h2>
+            <p class="lead mb-5">Entre em contato hoje mesmo para uma consulta gratuita e descubra como podemos ajudar sua empresa a alcançar novos patamares de eficiência e inovação.</p>
+            <a href="contato.html" class="btn btn-primary btn-lg px-5 py-3">Fale com um Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>ASL Software Engineering</h5>
+                    <p>Soluções tecnológicas personalizadas para transformar e otimizar o seu negócio.</p>
+                    <p>
+                        <a href="privacidade.html" class="text-white">Política de Privacidade</a>
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white">Home</a></li>
+                        <li><a href="quem_somos.html" class="text-white">Quem Somos</a></li>
+                        <li><a href="servicos.html" class="text-white">Serviços</a></li>
+                        <li><a href="criacao-sites.html" class="text-white">Criação de Sites</a></li>
+                        <li><a href="automacao.html" class="text-white">Automação</a></li>
+                        <li><a href="portfolio.html" class="text-white">Portfólio</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP - Brasil</p>
+                        <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope me-2"></i> contato@aslsoftwareengineering.com</p>
+                    </address>
+                    <div class="social-links mt-3">
+                        <a href="https://www.facebook.com/ASL.solucionando.problemas/" class="text-white me-3" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ajeitandoseulado/" class="text-white me-3" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-white" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 ASL Software Engineering. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/headroom.js"></script>
+    <script src="js/Q.headroom.js"></script>
+    <script src="js/common.js"></script>
+    
+    <!-- Script específico para esta página -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animação para cards de serviço
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.service-card').forEach(card => {
+                observer.observe(card);
+            });
+            
+            // Smooth scroll para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

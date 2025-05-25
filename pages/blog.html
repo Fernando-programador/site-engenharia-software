@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - ASL Software Engineering</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/font.css">
+    <!-- Adicional para ícones -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Estilo específico para a página de blog -->
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=uE02GJsYX3CMl_13fIlu-cCzv6HuIWr83DlZRmz8K5GJMsXZ5PV0LSFR_tLVlwuYQfOCHphxK2aza1liTRcFNNzJmmCzCFUwwSIFAGDgITiyXM01SrBzOjV3wn4aTt7kLaX2o5aNqzhPDEM977vY4UbpMF1pUiwMAHBrHqZKwX-t1Ou0cKDBDveYjkA9UTl_NApCHbIJ1cGgfU2A3cmM9uagsMf-4CMnqn-1Hj4rwEgOx5YztPF8uHE2USL03G7ykkPCdZScVz4qagQHbz5T56CjSSrKtyqHO_UQwBoAoD7o6ROLOj9WjgBtirVWFib7UGbk3AC2seKAo6vzwpCM-tkE6QisYIdsZwUPLjsPKTMhHEd9pJ9rd6eCp2xiR6OZdHcqoR2406cDj-wC_2QcHhKapPODHw-art2g8ayrO-AZD0s_OOneKG7CwzDHpfIUxVLBPOosultZkZrop6_H1OPJL5wK4qKlHOMr4-sBwUlFFouqDRG25oI8_-T6f-DZh_UgOgBe9sh0zOYJNrTXCv8OG4wKmdPYuKTS996Pt_-l8Z85JNYWpeBBMIhxUEULjyDPfWgFqkiVsV4EBDuK-YMkAJX6inTR2Lr3-veCVg8MSOgmygNH-qeXM57gKB428amicatjX77AdgrfbVCOlnvHKy7CAGSNMURAH6eWWipCTrFc2bBIhV-P2daVOCMfjK2a4Gw35tAiBNwRXdlYaU0bEdJ_dkj6XZaBFN2-Avi_c6bBy7Q4R3SWO1LTZsRYCb--yU1mxGK78ewDIQ126yZuad8CnIHS02YAvnphtFMhDCmsPZ4yZP3cuuUWRmpvVEhlfAFOU_TSmAXoy_vjJeAH0ViTJHQw6dhZ6IamgFaitjGSEGmdmLRAyhRGdd6faSOirJr7hPLpeVrAz8TfjEtiAnDBP_utCJhBJju5NkQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly92aWRhLXByaXZhdGUuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vc2Vzc2lvbkZpbGUvbFNxRzdvcHBCc0RoQXpQbHFqYjZBRi9zYW5kYm94L3I2MDZqcG82VmhHRHk2VzZvcGxCb3NfMTc0ODAwOTM5MTkxNV9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNCeWIycGxkRzl6TDNOcGRHVXRaVzVuWlc1b1lYSnBZUzF6YjJaMGQyRnlaUzl3WVdkbGN5OWliRzluLmh0bWw_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ29udGVudC1TaGEyNTY9VU5TSUdORUQtUEFZTE9BRCZYLUFtei1DcmVkZW50aWFsPUFLSUFaVjNBMkVDWk9GSFZUNFVWJTJmMjAyNTA1MjMlMmZ1cy1lYXN0LTElMmZzMyUyZmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTIzVDE0MTU1NVomWC1BbXotRXhwaXJlcz02MDM4MDAmWC1BbXotU2lnbmF0dXJlPTNhNThmOTIzM2MwNDkzMGMyNjc4ODM3ZDFhODU3MmJhOTVmNjdkYzhhNDkxODg1Y2NkMWU1ZjRmNjU5NTc3YWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTJhJTNkVVRGLTglMjclMjdibG9nLmh0bWwmcmVzcG9uc2UtY29udGVudC10eXBlPXRleHQlMmZodG1sJngtYW16LWNoZWNrc3VtLW1vZGU9RU5BQkxFRCZ4LWlkPUdldE9iamVjdA"/><style>
+        .blog-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/banner/blog-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .blog-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .blog-card-body {
+            padding: 20px;
+        }
+        
+        .blog-card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .blog-card-meta {
+            color: #6c757d;
+            font-size: 0.875rem;
+            margin-bottom: 10px;
+        }
+        
+        .blog-card-text {
+            color: #495057;
+            margin-bottom: 15px;
+        }
+        
+        .blog-sidebar {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-sidebar h5 {
+            border-bottom: 2px solid #17a2b8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .blog-sidebar ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .blog-sidebar ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .blog-sidebar ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .blog-sidebar ul li a {
+            color: #495057;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .blog-sidebar ul li a:hover {
+            color: #17a2b8;
+        }
+        
+        .blog-tag {
+            display: inline-block;
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .blog-tag:hover {
+            background-color: #17a2b8;
+            color: white;
+        }
+        
+        .pagination .page-item.active .page-link {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+        
+        .pagination .page-link {
+            color: #17a2b8;
+        }
+        
+        .pagination .page-link:hover {
+            color: #0f7888;
+        }
+        
+        .search-form .form-control:focus {
+            border-color: #17a2b8;
+            box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.25);
+        }
+        
+        .btn-primary {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+        
+        .btn-primary:hover {
+            background-color: #138496;
+            border-color: #138496;
+        }
+    </style>
+</head>
+<body class="fonte_normal">
+    <!-- Header com navegação -->
+    <header class="headroom header header--fixed hide-from-print" role="banner" id="my_nav">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" id="barra">
+            <div class="container">
+                <a class="navbar-brand" href="https://aslsoftwareengineering.com">
+                    <img src="image/logotipos/logo_com_fundo_retangulo1.png" alt="Logotipo da Empresa"
+                         style="height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="blog-header">
+        <div class="container">
+            <h1 class="display-4">Blog</h1>
+            <p class="lead">Novidades, tutoriais e insights sobre tecnologia e desenvolvimento de software</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo do Blog -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Posts do Blog -->
+                <div class="col-lg-8">
+                    <div class="row">
+                        <!-- Post 1 -->
+                        <div class="col-md-6">
+                            <div class="blog-card">
+                                <img src="image/blog/post1.jpg" alt="Desenvolvimento Web Moderno" class="card-img-top">
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="far fa-calendar-alt me-1"></i> 15 Maio, 2025</span>
+                                        <span class="ms-3"><i class="far fa-user me-1"></i> Admin</span>
+                                    </div>
+                                    <h3 class="blog-card-title">Tendências de Desenvolvimento Web para 2025</h3>
+                                    <p class="blog-card-text">Descubra as principais tendências e tecnologias que estão moldando o desenvolvimento web neste ano e como elas podem impactar seus projetos.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 2 -->
+                        <div class="col-md-6">
+                            <div class="blog-card">
+                                <img src="image/blog/post2.jpg" alt="Inteligência Artificial" class="card-img-top">
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="far fa-calendar-alt me-1"></i> 10 Maio, 2025</span>
+                                        <span class="ms-3"><i class="far fa-user me-1"></i> Admin</span>
+                                    </div>
+                                    <h3 class="blog-card-title">Como a IA está Transformando o Desenvolvimento de Software</h3>
+                                    <p class="blog-card-text">A inteligência artificial está mudando a forma como desenvolvemos software. Veja como aproveitar essa tecnologia em seus projetos.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 3 -->
+                        <div class="col-md-6">
+                            <div class="blog-card">
+                                <img src="image/blog/post3.jpg" alt="Automação de Processos" class="card-img-top">
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="far fa-calendar-alt me-1"></i> 5 Maio, 2025</span>
+                                        <span class="ms-3"><i class="far fa-user me-1"></i> Admin</span>
+                                    </div>
+                                    <h3 class="blog-card-title">Automação de Processos com Excel: Além das Fórmulas</h3>
+                                    <p class="blog-card-text">Aprenda técnicas avançadas para automatizar processos empresariais utilizando Excel e VBA, aumentando a produtividade da sua equipe.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 4 -->
+                        <div class="col-md-6">
+                            <div class="blog-card">
+                                <img src="image/blog/post4.jpg" alt="Segurança Cibernética" class="card-img-top">
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="far fa-calendar-alt me-1"></i> 28 Abril, 2025</span>
+                                        <span class="ms-3"><i class="far fa-user me-1"></i> Admin</span>
+                                    </div>
+                                    <h3 class="blog-card-title">Segurança Cibernética: Protegendo seu Negócio Online</h3>
+                                    <p class="blog-card-text">Conheça as melhores práticas de segurança cibernética para proteger seu negócio contra ameaças digitais cada vez mais sofisticadas.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 5 -->
+                        <div class="col-md-6">
+                            <div class="blog-card">
+                                <img src="image/blog/post5.jpg" alt="UX Design" class="card-img-top">
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="far fa-calendar-alt me-1"></i> 20 Abril, 2025</span>
+                                        <span class="ms-3"><i class="far fa-user me-1"></i> Admin</span>
+                                    </div>
+                                    <h3 class="blog-card-title">Princípios de UX Design para Desenvolvedores</h3>
+                                    <p class="blog-card-text">Entenda os princípios fundamentais de UX Design que todo desenvolvedor deve conhecer para criar interfaces mais intuitivas e eficientes.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 6 -->
+                        <div class="col-md-6">
+                            <div class="blog-card">
+                                <img src="image/blog/post6.jpg" alt="Cloud Computing" class="card-img-top">
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="far fa-calendar-alt me-1"></i> 15 Abril, 2025</span>
+                                        <span class="ms-3"><i class="far fa-user me-1"></i> Admin</span>
+                                    </div>
+                                    <h3 class="blog-card-title">Cloud Computing: Escolhendo a Melhor Solução para seu Projeto</h3>
+                                    <p class="blog-card-text">Compare as principais plataformas de cloud computing e descubra qual é a mais adequada para as necessidades específicas do seu projeto.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Paginação -->
+                    <nav class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Próximo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Pesquisa -->
+                    <div class="blog-sidebar mb-4">
+                        <h5>Pesquisar</h5>
+                        <form class="search-form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar posts...">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Categorias -->
+                    <div class="blog-sidebar mb-4">
+                        <h5>Categorias</h5>
+                        <ul>
+                            <li><a href="#">Desenvolvimento Web <span class="float-end">(12)</span></a></li>
+                            <li><a href="#">Inteligência Artificial <span class="float-end">(8)</span></a></li>
+                            <li><a href="#">Automação <span class="float-end">(6)</span></a></li>
+                            <li><a href="#">Excel Avançado <span class="float-end">(5)</span></a></li>
+                            <li><a href="#">Segurança <span class="float-end">(4)</span></a></li>
+                            <li><a href="#">UX/UI Design <span class="float-end">(3)</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Posts Recentes -->
+                    <div class="blog-sidebar mb-4">
+                        <h5>Posts Recentes</h5>
+                        <div class="d-flex mb-3">
+                            <img src="image/blog/post1.jpg" alt="Post Recente" style="width: 80px; height: 60px; object-fit: cover;">
+                            <div class="ms-3">
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">Tendências de Desenvolvimento Web para 2025</a></h6>
+                                <small class="text-muted">15 Maio, 2025</small>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="image/blog/post2.jpg" alt="Post Recente" style="width: 80px; height: 60px; object-fit: cover;">
+                            <div class="ms-3">
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">Como a IA está Transformando o Desenvolvimento de Software</a></h6>
+                                <small class="text-muted">10 Maio, 2025</small>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <img src="image/blog/post3.jpg" alt="Post Recente" style="width: 80px; height: 60px; object-fit: cover;">
+                            <div class="ms-3">
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none">Automação de Processos com Excel: Além das Fórmulas</a></h6>
+                                <small class="text-muted">5 Maio, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tags -->
+                    <div class="blog-sidebar">
+                        <h5>Tags</h5>
+                        <div>
+                            <a href="#" class="blog-tag">Desenvolvimento</a>
+                            <a href="#" class="blog-tag">Web</a>
+                            <a href="#" class="blog-tag">IA</a>
+                            <a href="#" class="blog-tag">Excel</a>
+                            <a href="#" class="blog-tag">Automação</a>
+                            <a href="#" class="blog-tag">Segurança</a>
+                            <a href="#" class="blog-tag">UX</a>
+                            <a href="#" class="blog-tag">Design</a>
+                            <a href="#" class="blog-tag">Cloud</a>
+                            <a href="#" class="blog-tag">Software</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>ASL Software Engineering</h5>
+                    <p>Soluções tecnológicas personalizadas para transformar e otimizar o seu negócio.</p>
+                    <p>
+                        <a href="privacidade.html" class="text-white">Política de Privacidade</a>
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white">Home</a></li>
+                        <li><a href="quem_somos.html" class="text-white">Quem Somos</a></li>
+                        <li><a href="#" class="text-white">Serviços</a></li>
+                        <li><a href="#" class="text-white">Projetos</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP - Brasil</p>
+                        <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope me-2"></i> contato@aslsoftwareengineering.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 ASL Software Engineering. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/headroom.js"></script>
+    <script src="js/Q.headroom.js"></script>
+    
+    <!-- Script para inicialização do Headroom -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicialização do Headroom para o menu fixo
+            const myElement = document.querySelector("#my_nav");
+            const headroom = new Headroom(myElement);
+            headroom.init();
+        });
+    </script>
+</body>
+</html>

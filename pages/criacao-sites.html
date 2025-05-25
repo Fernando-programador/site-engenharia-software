@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Sites Profissionais - ASL Software Engineering</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Criação de sites profissionais com código personalizado. Desenvolvimento web de alta qualidade com 6 anos de experiência no mercado. Sites responsivos e otimizados para SEO.">
+    <meta name="keywords" content="criação de sites, desenvolvimento web, sites profissionais, programação web, sites responsivos, desenvolvimento personalizado">
+    <meta name="author" content="ASL Software Engineering">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aslsoftwareengineering.com/pages/criacao-sites.html">
+    <meta property="og:title" content="Criação de Sites Profissionais - ASL Software Engineering">
+    <meta property="og:description" content="Criação de sites profissionais com código personalizado. Desenvolvimento web de alta qualidade com 6 anos de experiência no mercado.">
+    <meta property="og:image" content="https://aslsoftwareengineering.com/pages/image/banner/criacao-sites-banner.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aslsoftwareengineering.com/pages/criacao-sites.html">
+    <meta property="twitter:title" content="Criação de Sites Profissionais - ASL Software Engineering">
+    <meta property="twitter:description" content="Criação de sites profissionais com código personalizado. Desenvolvimento web de alta qualidade com 6 anos de experiência no mercado.">
+    <meta property="twitter:image" content="https://aslsoftwareengineering.com/pages/image/banner/criacao-sites-banner.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- Estilos específicos para a página -->
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=cjthb6mbRWo4pjG4rqLZWAQVKs1Q81txaae2twvSiew3C7j4HXlz8cWktV20Xmj9hogu3GjxwkWvIviiiR_4rG9kVHLEaO-pltlZPjfQTWWBXV3VJDbTdt8UFa6rLFgzkVVtucy5Z1syizAh0hFPUWgfiOX6uAmNpSYNtv43tsXV-SK_OGGulX8oEhqVYMvM3tkdEHRV4YnJrIrpweBTBrusdMjVXGY9Dve8LJqMpk2tf5wpZzAO2xGYwPQykckgpjsKoVDYgyh96vRO_VniKeOA2nb3mtrn1dosRNNZcp_DeH1GN10-S7nsaTea1_MxPAUkRmSuKuc5xR9LnCtCodeZTas23aToOb4W81f6AXEwRxogcYdH2ofXF95xQF762Og6l4EgkzPE_EzmWO9UgRpFxUA1T1j7kQJi1RnRzl1g1DIJV7-7duz_MxD6WqdbQKcieckJh5Gjh1SkX7dFf7vHc31RzFLazlZDJlxzX6meqZfX1Hj1JmMK8usC1L3lnCGoBcYPZX1WhluQQ6UQiQKjL6eIuLBQgwuQtfjkY2xrrCMpsOAAW909W40wrwByVOOqhmF1DFWeRE05Nx9IzDGIgKsGYngVntcidmEObhlRVcydX8oA32iu3i1ENLkLW-q-t8_KiqGkDXwTtXK3JGPt5WCWQ7TONZCq2yOi6KJ1K-mNR8jncuWzzB3Jjc5xPVsetYnXxzsHqjDuoU-3bn29IPa8zeA7ygS78NgFUuK0TVGwY8x2E1tkvUrtt7PwJY2wTTxDAOs0qAGs2xULt47KBHtFBHTRbQTrJD6kOit9GvmaEqJlqy4eA3vAvSAqCI55QNPlzQGhGXSPC1csyd3sC1oaJFmIfssMqoXIukufGhjGRIidx7wbTFSI5oDwPpAYZ985bXkFdu1wMJ5rss7fd-74BBs9B6StwgGx5nhZuv_zQs9CgWMJ1ugpfcSB" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly92aWRhLXByaXZhdGUuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vc2Vzc2lvbkZpbGUvbFNxRzdvcHBCc0RoQXpQbHFqYjZBRi9zYW5kYm94L1NHRFNzZW4xcG82OUtEcG1UQmt0MHhfMTc0ODAyMzY5MjQ4Nl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNCeWIycGxkRzl6TDNOcGRHVXRaVzVuWlc1b1lYSnBZUzF6YjJaMGQyRnlaUzl3WVdkbGN5OWpjbWxoWTJGdkxYTnBkR1Z6Lmh0bWw_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ29udGVudC1TaGEyNTY9VU5TSUdORUQtUEFZTE9BRCZYLUFtei1DcmVkZW50aWFsPUFLSUFaVjNBMkVDWk9GSFZUNFVWJTJmMjAyNTA1MjMlMmZ1cy1lYXN0LTElMmZzMyUyZmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTIzVDE5NTkwMFomWC1BbXotRXhwaXJlcz02MDM4MDAmWC1BbXotU2lnbmF0dXJlPWIyNjNmMTJlZDMxMmIyMGI1ZDM0NmQ3NjY0MmUxY2FjMGIwMDY5MDJhOTg1OTUyNjVjMDFkZGE5YmFkYjZmMzMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTJhJTNkVVRGLTglMjclMjdjcmlhY2FvLXNpdGVzLmh0bWwmcmVzcG9uc2UtY29udGVudC10eXBlPXRleHQlMmZodG1sJngtYW16LWNoZWNrc3VtLW1vZGU9RU5BQkxFRCZ4LWlkPUdldE9iamVjdA"/><style>
+        .feature-icon {
+            font-size: 3rem;
+            color: #17a2b8;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .comparison-table {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .comparison-table th {
+            background-color: #17a2b8;
+            color: white;
+        }
+        
+        .comparison-table .check {
+            color: #28a745;
+            font-size: 1.2rem;
+        }
+        
+        .comparison-table .times {
+            color: #dc3545;
+            font-size: 1.2rem;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #17a2b8;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -50px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #17a2b8;
+            border: 4px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tech-logo {
+            height: 60px;
+            object-fit: contain;
+            margin: 1rem;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+        
+        .tech-logo:hover {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(23, 162, 184, 0.1);
+            color: #17a2b8;
+        }
+        
+        .accordion-button:focus {
+            border-color: #17a2b8;
+            box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.25);
+        }
+        
+        .experience-counter {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #17a2b8;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-text {
+            font-size: 1.2rem;
+            color: #495057;
+        }
+        
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/banner/criacao-sites-banner.jpg');
+        }
+        
+        .cta-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('image/banner/cta-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body class="fonte_normal">
+    <!-- Header com navegação -->
+    <header class="headroom header header--fixed hide-from-print" role="banner" id="my_nav">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" id="barra">
+            <div class="container">
+                <a class="navbar-brand" href="https://aslsoftwareengineering.com">
+                    <img src="image/logotipos/logo_com_fundo_retangulo1.png" alt="Logotipo da Empresa"
+                         style="height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="criacao-sites.html">Criação de Sites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="automacao.html">Automação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="depoimentos.html">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4">Criação de Sites Profissionais</h1>
+            <p class="lead">Desenvolvimento web personalizado para transformar sua presença digital</p>
+        </div>
+    </section>
+
+    <!-- Por que escolher desenvolvimento via código -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Por que escolher desenvolvimento via código?</h2>
+                <p class="lead">Descubra as vantagens de um site desenvolvido com código personalizado</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-code feature-icon"></i>
+                            <h3 class="h4 mb-3">Personalização Total</h3>
+                        </div>
+                        <p>Sites desenvolvidos com código personalizado oferecem liberdade total de design e funcionalidades, adaptando-se perfeitamente às necessidades específicas do seu negócio.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-tachometer-alt feature-icon"></i>
+                            <h3 class="h4 mb-3">Performance Superior</h3>
+                        </div>
+                        <p>Código limpo e otimizado garante carregamento rápido e experiência fluida para seus visitantes, melhorando a taxa de conversão e o posicionamento no Google.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-mobile-alt feature-icon"></i>
+                            <h3 class="h4 mb-3">Responsividade Perfeita</h3>
+                        </div>
+                        <p>Seu site funcionará perfeitamente em qualquer dispositivo, desde smartphones até grandes monitores, garantindo a melhor experiência para todos os usuários.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-search feature-icon"></i>
+                            <h3 class="h4 mb-3">Otimizado para SEO</h3>
+                        </div>
+                        <p>Desenvolvimento com as melhores práticas de SEO técnico, garantindo melhor posicionamento nos resultados de busca e mais visibilidade para seu negócio.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-lock feature-icon"></i>
+                            <h3 class="h4 mb-3">Segurança Reforçada</h3>
+                        </div>
+                        <p>Código desenvolvido com foco em segurança, protegendo seu site e os dados dos seus clientes contra vulnerabilidades e ataques maliciosos.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-expand-arrows-alt feature-icon"></i>
+                            <h3 class="h4 mb-3">Escalabilidade</h3>
+                        </div>
+                        <p>Seu site cresce junto com seu negócio, permitindo adicionar novas funcionalidades e recursos conforme suas necessidades evoluem.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 pt-4">
+                <h3 class="mb-4">Comparativo: Desenvolvimento Personalizado vs. Plataformas Prontas</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Características</th>
+                                <th class="text-center">Desenvolvimento Personalizado</th>
+                                <th class="text-center">Plataformas Prontas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Personalização</td>
+                                <td class="text-center"><i class="fas fa-check check"></i> Total</td>
+                                <td class="text-center"><i class="fas fa-times times"></i> Limitada</td>
+                            </tr>
+                            <tr>
+                                <td>Performance</td>
+                                <td class="text-center"><i class="fas fa-check check"></i> Otimizada</td>
+                                <td class="text-center"><i class="fas fa-times times"></i> Variável</td>
+                            </tr>
+                            <tr>
+                                <td>Escalabilidade</td>
+                                <td class="text-center"><i class="fas fa-check check"></i> Ilimitada</td>
+                                <td class="text-center"><i class="fas fa-times times"></i> Restrita</td>
+                            </tr>
+                            <tr>
+                                <td>SEO</td>
+                                <td class="text-center"><i class="fas fa-check check"></i> Controle total</td>
+                                <td class="text-center"><i class="fas fa-times times"></i> Limitado</td>
+                            </tr>
+                            <tr>
+                                <td>Segurança</td>
+                                <td class="text-center"><i class="fas fa-check check"></i> Personalizada</td>
+                                <td class="text-center"><i class="fas fa-times times"></i> Genérica</td>
+                            </tr>
+                            <tr>
+                                <td>Propriedade do código</td>
+                                <td class="text-center"><i class="fas fa-check check"></i> 100% sua</td>
+                                <td class="text-center"><i class="fas fa-times times"></i> Da plataforma</td>
+                            </tr>
+                            <tr>
+                                <td>Custos recorrentes</td>
+                                <td class="text-center"><i class="fas fa-check check"></i> Apenas hospedagem</td>
+                                <td class="text-center"><i class="fas fa-times times"></i> Assinaturas mensais</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Nossa Experiência -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nossa Experiência</h2>
+                <p class="lead">6 anos transformando ideias em sites de sucesso</p>
+            </div>
+            
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6">
+                    <div class="experience-counter" data-count="150">150+</div>
+                    <div class="experience-text">Sites Entregues</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="experience-counter" data-count="98">98%</div>
+                    <div class="experience-text">Clientes Satisfeitos</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="experience-counter" data-count="6">6</div>
+                    <div class="experience-text">Anos de Experiência</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="experience-counter" data-count="15">15+</div>
+                    <div class="experience-text">Tecnologias Dominadas</div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Nossa Trajetória</h3>
+                    <p>Desde 2019, a ASL Software Engineering tem se destacado no mercado de desenvolvimento web, criando soluções personalizadas que atendem às necessidades específicas de cada cliente.</p>
+                    <p>Nossa equipe de desenvolvedores altamente qualificados combina conhecimento técnico avançado com visão estratégica de negócios, garantindo que cada projeto não seja apenas visualmente atraente, mas também eficiente em converter visitantes em clientes.</p>
+                    <p>Ao longo desses 6 anos, aperfeiçoamos nossos processos e metodologias, resultando em entregas cada vez mais rápidas sem comprometer a qualidade. Nosso compromisso com a excelência nos permitiu construir uma base sólida de clientes satisfeitos que confiam em nós para suas necessidades digitais.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Diferenciais da Nossa Equipe</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Profissionais certificados e em constante atualização
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Conhecimento avançado em tecnologias front-end e back-end
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Experiência em diversos segmentos de mercado
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Foco em resultados mensuráveis para o cliente
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Comunicação clara e transparente durante todo o projeto
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            Suporte técnico especializado pós-lançamento
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Processo de Desenvolvimento -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nosso Processo de Desenvolvimento</h2>
+                <p class="lead">Metodologia comprovada para entregar sites de alta qualidade</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>1. Planejamento Estratégico</h3>
+                    <p>Entendemos profundamente seu negócio, objetivos e público-alvo. Definimos a arquitetura do site, funcionalidades necessárias e estratégia de conteúdo para maximizar resultados.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>2. Design e Prototipagem</h3>
+                    <p>Criamos wireframes e protótipos interativos que permitem visualizar a estrutura e o fluxo de navegação do site antes do desenvolvimento. Refinamos o design com sua aprovação em cada etapa.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>3. Desenvolvimento Front-end</h3>
+                    <p>Transformamos o design aprovado em código HTML, CSS e JavaScript, garantindo uma interface responsiva, acessível e otimizada para todos os dispositivos e navegadores.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>4. Desenvolvimento Back-end</h3>
+                    <p>Implementamos a lógica de negócio, integrações com sistemas externos, banco de dados e funcionalidades dinâmicas que fazem seu site funcionar de forma eficiente.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>5. Testes e Otimização</h3>
+                    <p>Realizamos testes rigorosos de funcionalidade, usabilidade, segurança e performance. Otimizamos o código e os recursos para garantir carregamento rápido e experiência fluida.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>6. Lançamento e Treinamento</h3>
+                    <p>Publicamos o site em ambiente de produção e fornecemos treinamento para que você possa gerenciar seu conteúdo com facilidade. Monitoramos o lançamento para garantir estabilidade.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>7. Suporte Contínuo</h3>
+                    <p>Oferecemos suporte técnico especializado após o lançamento, garantindo que seu site permaneça atualizado, seguro e funcionando perfeitamente ao longo do tempo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tecnologias Utilizadas -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tecnologias Utilizadas</h2>
+                <p class="lead">Ferramentas modernas para criar sites de alta performance</p>
+            </div>
+            
+            <div class="row justify-content-center text-center">
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/html5.png" alt="HTML5" class="tech-logo">
+                    <p>HTML5</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/css3.png" alt="CSS3" class="tech-logo">
+                    <p>CSS3</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/javascript.png" alt="JavaScript" class="tech-logo">
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/react.png" alt="React" class="tech-logo">
+                    <p>React</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/node.png" alt="Node.js" class="tech-logo">
+                    <p>Node.js</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/php.png" alt="PHP" class="tech-logo">
+                    <p>PHP</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/mysql.png" alt="MySQL" class="tech-logo">
+                    <p>MySQL</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/bootstrap.png" alt="Bootstrap" class="tech-logo">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/wordpress.png" alt="WordPress" class="tech-logo">
+                    <p>WordPress</p>
+                </div>
+                <div class="col-md-2 col-4">
+                    <img src="image/tecnologias/git.png" alt="Git" class="tech-logo">
+                    <p>Git</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Perguntas Frequentes -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Perguntas Frequentes</h2>
+                <p class="lead">Respostas para as dúvidas mais comuns sobre criação de sites</p>
+            </div>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Quanto tempo leva para criar um site profissional?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            O tempo de desenvolvimento varia conforme a complexidade do projeto. Um site institucional simples pode levar de 2 a 4 semanas, enquanto projetos mais complexos com funcionalidades personalizadas podem levar de 2 a 4 meses. Durante nossa reunião inicial, forneceremos um cronograma detalhado baseado nas suas necessidades específicas.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Quanto custa criar um site profissional?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            O investimento em um site profissional varia de acordo com suas necessidades específicas, complexidade do projeto e funcionalidades desejadas. Trabalhamos com orçamentos personalizados para cada cliente, garantindo que você receba exatamente o que precisa sem pagar por recursos desnecessários. Entre em contato conosco para uma avaliação gratuita e orçamento detalhado.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Vou conseguir atualizar o conteúdo do meu site sozinho?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sim! Desenvolvemos todos os nossos sites com sistemas de gerenciamento de conteúdo intuitivos que permitem que você atualize textos, imagens e outros conteúdos sem conhecimento técnico. Além disso, oferecemos treinamento completo para sua equipe e suporte contínuo caso surjam dúvidas.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            O site será otimizado para mecanismos de busca (SEO)?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutamente! Todos os nossos sites são desenvolvidos seguindo as melhores práticas de SEO técnico, incluindo código limpo e semântico, velocidade de carregamento otimizada, estrutura de URLs amigável, meta tags personalizadas e compatibilidade com dispositivos móveis. Também oferecemos serviços adicionais de SEO para melhorar ainda mais seu posicionamento nos resultados de busca.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Vocês oferecem hospedagem para o site?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sim, oferecemos soluções de hospedagem de alta performance e confiabilidade para garantir que seu site esteja sempre disponível e carregue rapidamente. Nossos planos de hospedagem incluem certificado SSL, backup diário, suporte técnico e monitoramento constante. Também podemos trabalhar com seu provedor atual se preferir.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <h2 class="display-5 mb-4">Pronto para transformar sua presença digital?</h2>
+            <p class="lead mb-5">Entre em contato hoje mesmo para uma consulta gratuita e descubra como podemos ajudar seu negócio a se destacar online.</p>
+            <a href="contato.html" class="btn btn-primary btn-lg px-5 py-3">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>ASL Software Engineering</h5>
+                    <p>Soluções tecnológicas personalizadas para transformar e otimizar o seu negócio.</p>
+                    <p>
+                        <a href="privacidade.html" class="text-white">Política de Privacidade</a>
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white">Home</a></li>
+                        <li><a href="quem_somos.html" class="text-white">Quem Somos</a></li>
+                        <li><a href="servicos.html" class="text-white">Serviços</a></li>
+                        <li><a href="criacao-sites.html" class="text-white">Criação de Sites</a></li>
+                        <li><a href="automacao.html" class="text-white">Automação</a></li>
+                        <li><a href="portfolio.html" class="text-white">Portfólio</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP - Brasil</p>
+                        <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope me-2"></i> contato@aslsoftwareengineering.com</p>
+                    </address>
+                    <div class="social-links mt-3">
+                        <a href="https://www.facebook.com/ASL.solucionando.problemas/" class="text-white me-3" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ajeitandoseulado/" class="text-white me-3" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-white" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 ASL Software Engineering. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/headroom.js"></script>
+    <script src="js/Q.headroom.js"></script>
+    <script src="js/common.js"></script>
+    
+    <!-- Script específico para esta página -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animação para contadores
+            const counters = document.querySelectorAll('.experience-counter');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000; // 2 segundos
+                const step = target / (duration / 16); // 60fps
+                
+                let current = 0;
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        counter.textContent = Math.ceil(current) + (counter.textContent.includes('%') ? '%' : '+');
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target + (counter.textContent.includes('%') ? '%' : '+');
+                    }
+                };
+                
+                // Iniciar animação quando o elemento estiver visível
+                const observer = new IntersectionObserver((entries) => {
+                    if (entries[0].isIntersecting) {
+                        updateCounter();
+                        observer.disconnect();
+                    }
+                });
+                
+                observer.observe(counter);
+            });
+        });
+    </script>
+</body>
+</html>

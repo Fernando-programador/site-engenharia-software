@@ -1,0 +1,92 @@
+/* 
+ * Estilos comuns para todas as páginas
+ * ASL Software Engineering
+ */
+
+/* Estilos para cabeçalhos de página */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/banner/default-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Estilos para cards e containers */
+.content-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Cores e botões personalizados */
+.btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-primary:hover {
+    background-color: #138496;
+    border-color: #138496;
+}
+
+.text-primary {
+    color: #17a2b8 !important;
+}
+
+.border-primary {
+    border-color: #17a2b8 !important;
+}
+
+/* Estilos para formulários */
+.form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.25);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 0;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .content-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        padding: 40px 0;
+    }
+    
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Animações e transições */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
