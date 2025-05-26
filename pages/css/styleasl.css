@@ -1,0 +1,1127 @@
+@import url(../font/font.css);
+/* 
+ * Estilos comuns para todas as páginas
+ * ASL Software Engineering
+ */
+
+/* Estilos para cabeçalhos de página */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    color: #0056b3;
+}
+a:hover{
+    color: #707070;
+}
+
+.fonte_normal {
+  font-family: 'space_monoregular';
+  font-size: 1.2rem
+}
+
+.fonte_bold {
+  font-family: 'space_monobold';
+ font-size: 1.2rem
+}
+
+.fonte_italico {
+  font-family: 'space_monoitalic';
+font-size: 1.2rem
+}
+
+/* Ajuste: Removida margem negativa para evitar sobreposição */
+#breadcrumb {
+  /* margin-bottom: -100px; */
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  /* Adicionado espaçamento padrão */
+}
+
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/papel_de_parede02.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Estilos para cards e containers */
+.content-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Cores e botões personalizados */
+.btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-primary:hover {
+    background-color: #138496;
+    border-color: #138496;
+}
+
+.text-primary {
+    color: #17a2b8 !important;
+}
+
+.border-primary {
+    border-color: #17a2b8 !important;
+}
+
+/* Estilos para formulários */
+.form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.25);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 0;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .content-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Animações e transições */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos específicos para a página de serviços */ 
+.service-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card-icon {
+    font-size: 3rem;
+    color: #17a2b8;
+    margin-bottom: 1rem;
+}
+
+.service-card-header {
+    background-color: #17a2b8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card-body {
+    padding: 20px;
+}
+
+.service-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-detail {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service-detail-icon {
+    font-size: 2.5rem;
+    color: #17a2b8;
+    margin-right: 20px;
+}
+
+.service-detail-title {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.service-detail-subtitle {
+    color: #6c757d;
+    margin: 5px 0 0 0;
+}
+
+.service-feature {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.service-feature-icon {
+    color: #17a2b8;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.methodology-step {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.methodology-step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #17a2b8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.methodology-step-content {
+    flex-grow: 1;
+}
+
+.methodology-step-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.pricing-table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table th {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.pricing-table .check {
+    color: #28a745;
+    font-size: 1.2rem;
+}
+
+.pricing-table .times {
+    color: #dc3545;
+    font-size: 1.2rem;
+}
+
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/papel-de-parede-servicos.jpg');
+}
+
+.cta-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../image/papel-de-parede-cta-servicos.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    margin-top: 80px;
+}
+
+.tech-badge {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+
+
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    /* Esconde o botão inicialmente */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#topButton:hover {
+    background-color: #0056b3;
+}
+
+
+#desc_quem_somos {
+  margin-top: 4rem;
+  /* Ajustado espaçamento superior */
+}
+
+.social-links {
+  height: auto;
+  width: 100%;
+  text-align: right;
+}
+
+.icone {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.link_icone {
+  text-decoration: none;
+}
+
+#barra {
+  color: #40474d;
+  background-color: #40474d;
+}
+
+.icone_solid {
+  border-right: 2px solid #a1a1a1;
+  padding-right: 15px;
+  height: auto;
+  width: auto;
+  /* Ajustado para largura automática */
+}
+
+.rodape {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.box_icon {
+  border-right: 2px solid #484848;
+  float: left;
+  font-size: 1.4rem;
+  height: 40px;
+  line-height: 45px;
+  margin: 0 20px 0 0;
+}
+
+.box-icon i {
+  line-height: 45px;
+  fill: #16a085;
+}
+
+#sub-titulo {
+  text-shadow: 2px 2px 1px #fff;
+}
+
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+  /* height: 100px; -> Altura definida pelo conteúdo ou classes Bootstrap */
+  position: fixed;
+  z-index: 1000;
+  /* Aumentado z-index para garantir visibilidade */
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #40474d;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+/*IMAGENS
+===================================================*/
+/* Ajuste: Removido transform: scale global. Aplicado max-width e height auto */
+img {
+  /* transform: scale(0.8); */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  /* Para evitar espaços extras abaixo da imagem */
+}
+
+#header {
+  background: #181018ce url(../image/papel_de_parede01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  /* Ajustado min-height para ser mais flexível */
+  margin-top: 100px;
+  /* Mantido para compensar header fixo */
+  text-align: center;
+  padding-top: 15vh;
+  /* Usado vh para padding */
+  padding-bottom: 10vh;
+  text-shadow: 3px 3px 0px #a6a6a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header.secondary {
+  height: auto;
+  /* Altura automática */
+  min-height: auto;
+  padding-top: 0;
+}
+
+.retangulo {
+  background: #40474d url(../image/esverdeado.jpg);
+  background-size: cover;
+  /* Usar cover para melhor adaptação */
+  background-position: center;
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  /* Ajustado tamanho da fonte */
+  min-height: auto;
+  /* Removido min-height fixo */
+  padding: 4rem 1rem;
+  /* Adicionado padding responsivo */
+  /* max-height: 350px -> Removido max-height */
+}
+
+
+
+#header h1 {
+  color: #fff;
+  font-size: 2.5em;
+  /* Ajustado tamanho da fonte */
+  font-weight: 800;
+  text-align: center;
+  text-decoration: overline;
+  /* margin-top: -150px; -> Removida margem negativa */
+  margin-bottom: 2rem;
+  /* Adicionado espaçamento inferior */
+}
+
+/* Ajuste: Removido posicionamento e margens complexas. Usar grid/flexbox */
+#img-pensador {
+  /* position: relative; */
+  width: 100%;
+  /* Ocupar largura da coluna */
+  max-width: 450px;
+  /* Limite máximo */
+  height: auto;
+  /* max-height: 500px; */
+  /* margin-top: -100px; */
+  /* margin-left: 100px; */
+  margin: 2rem auto;
+  /* Centralizar e adicionar margem */
+}
+
+.logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Permitir quebra de linha em telas menores */
+  gap: 1rem;
+  /* Espaçamento entre logos e símbolo */
+}
+
+.logotipo img {
+  max-width: 150px;
+  /* Ajustado tamanho máximo */
+  height: auto;
+}
+
+.symbol {
+  font-size: 5rem;
+  /* Ajustado tamanho */
+  color: #fafafa;
+  font-weight: 900;
+  text-shadow: 0px 0px 10px #fff000;
+  /* margin-top: -20px; -> Removida margem negativa */
+  line-height: 1;
+  /* Ajustar altura da linha */
+}
+
+
+/*RESPONSIVIDADE DO SITE
+==============================================*/
+
+/* Ajuste geral: Remover min-width e simplificar regras. Confiar mais no Bootstrap. */
+
+/* Estilos base (Mobile First) - Aplicados fora de media queries ou em (min-width: 0) */
+main {
+  overflow-x: hidden;
+  /* Prevenir scroll horizontal */
+}
+
+#desc_quem_somos {
+  margin-top: 3rem;
+  text-align: center;
+  /* Centralizar texto em telas pequenas */
+}
+
+#desc_quem_somos h2 {
+  font-size: 1.8rem;
+}
+
+#desc_quem_somos p {
+  text-align: justify;
+}
+
+.retangulo h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#header {
+  padding-top: 10vh;
+  min-height: 60vh;
+}
+
+#header h1 {
+  font-size: 2em;
+  margin-top: 0;
+  /* Resetar margem */
+}
+
+.logotipo {
+  flex-direction: column;
+  /* Empilhar logos em telas pequenas */
+}
+
+.logotipo img {
+  max-width: 120px;
+  /* Reduzir logos em telas pequenas */
+}
+
+.symbol {
+  font-size: 3rem;
+}
+
+#img-pensador {
+  margin: 1rem auto;
+}
+
+.counter #counter .cell {
+  width: auto;
+  /* Largura automática */
+  margin: 1rem;
+  /* Ajustar margens */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #desc_quem_somos {
+    text-align: left;
+    /* Alinhar à esquerda em telas maiores */
+    margin-top: 4rem;
+  }
+
+  #desc_quem_somos h2 {
+    font-size: 2rem;
+  }
+
+  .retangulo h2 {
+    font-size: 2.2em;
+    text-align: left;
+  }
+
+  #header {
+    padding-top: 15vh;
+    min-height: 70vh;
+  }
+
+  #header h1 {
+    font-size: 2.5em;
+  }
+
+  .logotipo {
+    flex-direction: row;
+    /* Logos lado a lado */
+  }
+
+  .logotipo img {
+    max-width: 150px;
+  }
+
+  .symbol {
+    font-size: 5rem;
+  }
+
+  #img-pensador {
+    margin: 2rem 0 2rem auto;
+    /* Alinhar à direita */
+  }
+
+  .counter #counter .cell {
+    margin: 1.5rem 2rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #header {
+    min-height: 80vh;
+  }
+
+  .retangulo h2 {
+    font-size: 2.5em;
+  }
+
+  #img-pensador {
+    margin: 2rem 0 2rem 50px;
+    /* Ajuste margem esquerda */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .retangulo h2 {
+    font-size: 3em;
+  }
+}
+
+
+/*CONTAGEM DE DADOS EM QUEM SOMOS
+=============================================================*/
+.counter {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #008b8b;
+  text-align: center;
+}
+
+#counter img {
+  height: 80px;
+  /* Ajustado tamanho */
+  margin-bottom: 1rem;
+}
+
+.counter #counter {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centralizar itens */
+  align-items: flex-start;
+  gap: 1rem;
+  /* Espaçamento entre células */
+}
+
+.counter #counter .cell {
+  display: flex;
+  /* Usar flex para alinhar verticalmente */
+  flex-direction: column;
+  /* Empilhar imagem, número, texto */
+  align-items: center;
+  /* Centralizar horizontalmente */
+  /* width: 6.25rem; -> Removido */
+  text-align: center;
+  /* margin-right: 3.5rem; -> Removido */
+  margin-bottom: 2rem;
+  /* margin-left: 3.5rem; -> Removido */
+  vertical-align: top;
+  color: #fafafa;
+}
+
+.counter h2 {
+  color: #fafafa;
+  font-style: italic;
+  font-size: 2rem;
+  /* Ajustado */
+  margin-bottom: 2rem;
+}
+
+.fans {
+  margin-bottom: 0.875rem;
+}
+
+.counter-info {
+  font-size: 1.2rem;
+  /* Ajustado */
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+
+.contagem {
+  display: inline-flex;
+  align-items: baseline;
+  /* Alinhar baseline */
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.8em;
+  /* Ajustado */
+}
+
+.contagem p {
+  margin: 0 0.2em;
+  /* Espaçamento para + e % */
+}
+
+.counter-value {
+  min-width: 40px;
+  /* Espaço mínimo para o número */
+  text-align: center;
+}
+
+
+/*carrosel
+============================================*/
+.brand {
+  padding: 40px 0;
+}
+
+.brand h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  /* Ajustado */
+  margin-bottom: 2rem;
+  color: #40474d;
+  /* Ajustada cor para melhor contraste */
+}
+
+.brand-area {
+  position: relative;
+  background: #f8f9fa;
+  /* Fundo mais claro */
+  padding: 2rem 0;
+}
+
+.brand-area .item {
+  padding: 0 15px;
+  /* Reduzido padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand .brand-area .owl-carousel .owl-item img {
+  display: block;
+  width: auto;
+  /* Largura automática */
+  max-width: 100%;
+  /* Prevenir que fique maior que o container */
+  height: 80px;
+  /* Altura fixa para consistência */
+  object-fit: contain;
+  /* Manter proporção dentro da altura */
+  /* border-radius: 2; -> Removido */
+}
+
+
+/*---------------------------------------
+     FOOTER
+  -----------------------------------------*/
+
+.site-footer {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #40474d;
+  border-top: 1px solid #dee2e6;
+  /* Cor de borda suave */
+  padding: 3rem 1rem;
+  /* Ajustado padding */
+  /* padding-top: 100px; -> Removido, incluído no padding */
+  color: #adb5bd;
+  /* Cor de texto mais suave */
+  font-size: 1.2rem;
+  /* Ajustado tamanho da fonte base */
+}
+
+.site-footer a {
+  color: #C5CC60;
+}
+
+.site-footer a:hover {
+  color: #adb5bd;
+  /* Cor de hover mais clara */
+}
+
+.site-footer h3,
+.site-footer h2
+  {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #343a40;
+  color: #adb5bd;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+
+/*ANIMAÇÕES
+==============================================*/
+/* Mantidas como estavam, mas verificar se causam reflow excessivo */
+.animated-asl-fadeIn {
+  /* width: 100%; */
+  /* Removido para não forçar largura */
+  /* max-width: 500px; */
+  /* Removido para não forçar largura */
+  /* display: block; */
+  /* Pode conflitar com flex/grid */
+  /* margin: 0 auto; */
+  /* Pode conflitar com flex/grid */
+  animation: fadeIn 1.5s ease-in-out;
+  /* Duração reduzida */
+}
+
+.animated-asl-zoomIn {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.animated-asl-slideIn {
+  animation: slideIn 1s ease-in-out;
+}
+
+.animated-asl-fadeEffect {
+  animation: fadeEffect 1.5s ease-in-out;
+}
+
+.animated-asl-rotateElement {
+  animation: rotateElement 2s ease-in-out;
+}
+
+.animated-asl-bounce {
+  animation: bounce 1.5s ease-in-out;
+}
+
+.animated-asl-pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation: pulse 1.5s ease-in-out infinite;
+  /* Exemplo: Animação infinita */
+}
+
+.animated-asl-rubberBand {
+  -webkit-animation-name: rubberBandse;
+  animation-name: rubberBand;
+  animation: rubberBand 1s ease-in-out;
+}
+
+.animated-asl-shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  animation: shake 1s ease-in-out;
+}
+
+.animated-asl-swing {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+  animation: swing 1.5s ease-in-out;
+}
+
+.animated-asl-flipInX {
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  animation: flipInX 1.5s ease-in-out;
+}
+
+.animated-asl-slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  animation: slideInDown 1s ease-in-out;
+}
+
+.animated-asl-slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation: slideInUp 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+    /* Distância reduzida */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50px);
+    /* Distância reduzida */
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateElement {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    /* Reduzido para 1 volta */
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+    /* Altura reduzida */
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+    /* Efeito mais sutil */
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes shake {
+
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+/* Adicionar classe para imagens fluidas do Bootstrap se necessário */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+/*
+.nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+}
+*/
