@@ -226,47 +226,73 @@
     </style>
 </head>
 <body class="fonte_normal">
-    <!-- Header com navegação -->
+     <!-- Header com navegação -->
     <header class="headroom header header--fixed hide-from-print" role="banner" id="my_nav">
         <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" id="barra">
             <div class="container">
                 <a class="navbar-brand" href="https://aslsoftwareengineering.com">
-                    <img src="image/logotipos/logo_com_fundo_retangulo1.png" alt="Logotipo da Empresa"
-                         style="height: 50px;">
+                    <!-- SEO: Alt descritivo -->
+                    <img src="image/logotipos/logo_com_fundo_retangulo192x77.png"
+                        alt="Logotipo ASL Software Engineering" width="192" height="77"
+                        class="d-inline-block align-text-top img-fluid" style="max-height: 70px; width: auto;">
+                    <!-- Adicionado img-fluid e ajuste inline -->
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav nav nav-pills ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
+                            <a class="nav-link" href="../index.html">
+                                <i class="fa fa-home"></i>
+                                Home
+                            </a>
+                        </li>
+                           <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-users"></i>
+                                Sobre nós
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item active" href="quem_somos.html">Quem Somos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item active" href="depoimentos.html">Depoimentos</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html">Portfólios</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+                            <!-- Atenção: Verificar links e nomes -->
+                            <a class="nav-link" href="blog.html"> <!-- Link de exemplo -->
+                                <i class="fa fa-newspaper"></i>
+                                Panorama Digital
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-cogs"></i>
+                                Serviços
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" aria-current="page" href="servicos.html">Tipos Serviços</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="automacao.html">Automatizaçao no Excel</a></li>
+                                <li><a class="dropdown-item" href="criacao-sites.html">Criação de sites</a></li>
+                                <li><a class="dropdown-item" href="desenvolvimento-software.html">Desenvolvimento de Software</a>    
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="servicos.html">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="criacao-sites.html">Criação de Sites</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="automacao.html">Automação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfólio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="depoimentos.html">Depoimentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contato.html">Contato</a>
+                            <a class="nav-link" href="contato.html"> <!-- Link de exemplo -->
+                                <i class="fa fa-briefcase"></i> <!-- Ícone mais relevante -->
+                                Trabalhe Conosco
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -281,6 +307,22 @@
             <p class="lead">Conheça a experiência de quem já confiou em nossos serviços</p>
         </div>
     </section>
+
+        
+  <!--==============================================================-->
+    <!--BREADCRUMB-->
+    <nav aria-label="breadcrumb" id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <!-- Atenção: Verificar caminho do link -->
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Panorama Digital</li>
+            </ol>
+        </div>
+    </nav>
+    <!--FIM BREADCRUMB-->
+    <!--==============================================================-->
+
 
     <!-- Estatísticas de satisfação -->
     <section class="py-5">
@@ -795,48 +837,54 @@
         </div>
     </section>
 
+   <button id="topButton" onclick="scrollToTop()"><i class="fa solid fa-arrow-up"></i> topo</button>
+
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5 mt-0">
+    <footer class="bg-dark py-5 mt-0 site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5>ASL Software Engineering</h5>
                     <p>Soluções tecnológicas personalizadas para transformar e otimizar o seu negócio.</p>
                     <p>
-                        <a href="privacidade.html" class="text-white">Política de Privacidade</a>
+                        <a href="privacidade.html">Política de Privacidade</a>
                     </p>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5>Links Rápidos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="../index.html" class="text-white">Home</a></li>
-                        <li><a href="quem_somos.html" class="text-white">Quem Somos</a></li>
-                        <li><a href="servicos.html" class="text-white">Serviços</a></li>
-                        <li><a href="criacao-sites.html" class="text-white">Criação de Sites</a></li>
-                        <li><a href="automacao.html" class="text-white">Automação</a></li>
-                        <li><a href="portfolio.html" class="text-white">Portfólio</a></li>
-                        <li><a href="blog.html" class="text-white">Blog</a></li>
-                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="quem_somos.html">Quem Somos</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="blog.html">Panorama Digital</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="automacao.html">Automatização no Excel</a></li>
+                        <li><a href="criacao-sites.html">Criação sites</a></li>
+                        <li><a href="desenvolvimento-software.html">Desenvolvimento de Software</a></li>
+                        <li><a href="contato.html">Trabalhe Conosco</a></li>
+                        <li><a href="Termos-de-uso.html">Termos de uso</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h5>Contato</h5>
                     <address>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP - Brasil</p>
-                        <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
-                        <p><i class="fas fa-envelope me-2"></i> contato@aslsoftwareengineering.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <a href="https://www.google.com/maps?q=-22.734348699365356,-47.64527648281199" target="_blank">Piracicaba, SP - Brasil</a></p>
+                        <p><i class="fas fa-phone me-2"></i> <a href="tel:+5519992222239">(19) 99222-2239</a></p>
+                        <p><i class="fas fa-envelope me-2"></i> <a href="mailto:contato@aslsoftwareengineering.com">contato@aslsoftwareengineering.com</a> </p>
                     </address>
                     <div class="social-links mt-3">
-                        <a href="https://www.facebook.com/ASL.solucionando.problemas/" class="text-white me-3" target="_blank">
+                        <a href="https://www.facebook.com/ASL.solucionando.problemas/" class="text-white me-3"
+                            target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.instagram.com/ajeitandoseulado/" class="text-white me-3" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="text-white me-3" target="_blank">
+                        <a href="https://www.linkedin.com/in/fernando-dos-santos-corr%C3%AAa-26a360229/" class="text-white me-3" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="text-white" target="_blank">
+                        <a href="https://github.com/Fernando-programador" class="text-white" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -856,7 +904,29 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/headroom.js"></script>
     <script src="js/Q.headroom.js"></script>
-    <script src="js/common.js"></script>
+    <script src="js/scriptasl.js"></script>
+    <script src="js/all.min.js"></script>
+
+    <!--Botão para volatar ao  topo da pagina-->
+    <script>
+        // Exibe o botão apenas quando o usuário rolar para baixo
+        window.onscroll = function () {
+            var button = document.getElementById("topButton");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Função para rolar suavemente para o topo
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
     
     <!-- Script específico para esta página -->
     <script>
