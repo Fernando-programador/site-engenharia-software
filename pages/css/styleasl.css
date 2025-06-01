@@ -265,10 +265,11 @@ font-size: 1.2rem
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/papel-de-parede-servicos.jpg');
+    height: 400px;
 }
 
 .cta-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../image/papel-de-parede-cta-servicos.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/papel_de_parede-transformar-presenca-digital.jpg');
     background-size: cover;
     background-position: center;
     color: white;
